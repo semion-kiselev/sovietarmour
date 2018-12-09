@@ -1,0 +1,74 @@
+[
+  {
+    "name": {
+      "ru": "1/87",
+      "en": "1/87"
+    },
+    "slug": "1-87",
+    "visible": true,
+    "sortOrder": 1
+  },
+  {
+    "name": {
+      "ru": "Техника Великой войны",
+      "en": "Greate War Armour"
+    },
+    "slug": "greate-war-armour",
+    "visible": true,
+    "sortOrder": 2
+  },
+  {
+    "name": {
+      "ru": "Техника Англии",
+      "en": "English Armour"
+    },
+    "slug": "english-armour",
+    "visible": true,
+    "sortOrder": 3
+  },
+  {
+    "name": {
+      "ru": "Техника Германии",
+      "en": "Germany Armour"
+    },
+    "slug": "germany-armour",
+    "visible": true,
+    "sortOrder": 4
+  },
+  {
+    "name": {
+      "ru": "Техника США",
+      "en": "USA Armour"
+    },
+    "slug": "usa-armour",
+    "visible": true,
+    "sortOrder": 5
+  },
+  {
+    "name": {
+      "ru": "Прочая зарубежная техника",
+      "en": "Other Foreign Armour"
+    },
+    "slug": "other-foreign-armour",
+    "visible": true,
+    "sortOrder": 6
+  },
+  {
+    "name": {
+      "ru": "Советская техника до 1945 года",
+      "en": "Soviet Armour before 1945"
+    },
+    "slug": "soviet-armour-before-1945",
+    "visible": true,
+    "sortOrder": 7
+  },
+  {
+    "name": {
+      "ru": "Советская техника после 1945 года",
+      "en": "Soviet Armour after 1945"
+    },
+    "slug": "soviet-armour-after-1945",
+    "visible": true,
+    "sortOrder": 8
+  }
+]

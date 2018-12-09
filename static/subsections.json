@@ -1,0 +1,1190 @@
+[
+  {
+    "name": {
+      "ru": "1/87",
+      "en": "1/87"
+    },
+    "title": {
+      "ru": "Готовые модели танков в масштабе 1/87 и машин на их базе",
+      "en": "Diecast tanks and military vehicles of 1/87 scale"
+    },
+    "titleShort": {
+      "ru": "Готовые модели танков в масштабе 1/87 и машин на их базе",
+      "en": "Diecast tanks and military vehicles of 1/87 scale"
+    },
+    "description": {
+      "ru": "На данной странице представлены готовые модели танков в масштабе 1/72 и машин на их базе",
+      "en": "This page contains 1/72 scale diecast tanks and military vehicles"
+    },
+    "slug": "1-87",
+    "visible": true,
+    "sortOrder": 1,
+    "section": "1-87"
+  },
+  {
+    "name": {
+      "ru": "Техника Великой войны",
+      "en": "Great War Armour"
+    },
+    "title": {
+      "ru": "Готовые модели техники Великой войны в масштабе 1/72",
+      "en": "Diecast tanks and military vehicles of Great war, scale 1/72"
+    },
+    "titleShort": {
+      "ru": "Готовые модели техники Великой войны",
+      "en": "Tanks and military vehicles of Great war"
+    },
+    "description": {
+      "ru": "На данной странице представлены готовые модели техники Великой войны в масштабе 1/72",
+      "en": "This page contains 1/72 scale diecast tanks and military vehicles of Great war"
+    },
+    "slug": "great-war-armour",
+    "visible": true,
+    "sortOrder": 1,
+    "section": "greate-war-armour"
+  },
+  {
+    "name": {
+      "ru": "БТР Universal Carrier",
+      "en": "Universal Carrier"
+    },
+    "title": {
+      "ru": "Готовые модели БТРов Universal Carrier в масштабе 1/72",
+      "en": "Diecast Universal Carrier military vehicles, scale 1/72"
+    },
+    "titleShort": {
+      "ru": "Готовые модели БТРов Universal Carrier",
+      "en": "Universal Carrier military vehicles"
+    },
+    "description": {
+      "ru": "На данной странице представлены готовые модели БТРов Universal Carrier в масштабе 1/72",
+      "en": "This page contains 1/72 scale diecast Universal Carrier military vehicles"
+    },
+    "slug": "universal-carrier",
+    "visible": true,
+    "sortOrder": 1,
+    "section": "english-armour"
+  },
+  {
+    "name": {
+      "ru": "Автомобили Bedford",
+      "en": "Bedford Trucks"
+    },
+    "title": {
+      "ru": "Готовые модели автомобилей Bedford в масштабе 1/72",
+      "en": "Diecast Bedford trucks, scale 1/72"
+    },
+    "titleShort": {
+      "ru": "Готовые модели автомобилей Bedford",
+      "en": "Bedford trucks"
+    },
+    "description": {
+      "ru": "На данной странице представлены готовые модели автомобилей Bedford в масштабе 1/72",
+      "en": "This page contains 1/72 scale diecast Bedford trucks"
+    },
+    "slug": "bedford-trucks",
+    "visible": true,
+    "sortOrder": 2,
+    "section": "english-armour"
+  },
+  {
+    "name": {
+      "ru": "Английская артиллерия",
+      "en": "English Artillery"
+    },
+    "title": {
+      "ru": "Готовые модели английской артиллерии в масштабе 1/72",
+      "en": "Diecast English artillery, scale 1/72"
+    },
+    "titleShort": {
+      "ru": "Готовые модели английской артиллерии",
+      "en": "English artillery"
+    },
+    "description": {
+      "ru": "На данной странице представлены готовые модели английской артиллерии в масштабе 1/72",
+      "en": "This page contains 1/72 scale diecast English artillery"
+    },
+    "slug": "english-artillery",
+    "visible": true,
+    "sortOrder": 3,
+    "section": "english-armour"
+  },
+  {
+    "name": {
+      "ru": "Прочая техника Англии",
+      "en": "Other English Armour"
+    },
+    "title": {
+      "ru": "Готовые модели прочей техники Англии в масштабе 1/72",
+      "en": "Other English armour, scale 1/72"
+    },
+    "titleShort": {
+      "ru": "Готовые модели прочей техники Англии",
+      "en": "Other diecast English armour"
+    },
+    "description": {
+      "ru": "На данной странице представлены готовые модели прочей техники Англии в масштабе 1/72",
+      "en": "This page contains 1/72 scale diecast other English armour"
+    },
+    "slug": "other-english-armour",
+    "visible": true,
+    "sortOrder": 4,
+    "section": "english-armour"
+  },
+  {
+    "name": {
+      "ru": "Pz.Kpfw. I",
+      "en": "Pz.Kpfw. I"
+    },
+    "title": {
+      "ru": "Готовые модели танков Pz.Kpfw. I и машин на их базе в масштабе 1/72",
+      "en": "Diecast tanks and military vehicles of Pz.Kpfw. I, scale 1/72"
+    },
+    "titleShort": {
+      "ru": "Готовые модели танков Pz.Kpfw. I и машин на их базе",
+      "en": "Tanks and military vehicles of Pz.Kpfw. I"
+    },
+    "description": {
+      "ru": "На данной странице представлены готовые модели танков Pz.Kpfw. I и машин на их базе в масштабе 1/72",
+      "en": "This page contains 1/72 scale diecast tanks and military vehicles of Pz.Kpfw. I"
+    },
+    "slug": "pz-I",
+    "visible": true,
+    "sortOrder": 1,
+    "section": "germany-armour"
+  },
+  {
+    "name": {
+      "ru": "Pz.Kpfw. II",
+      "en": "Pz.Kpfw. II"
+    },
+    "title": {
+      "ru": "Готовые модели танков Pz.Kpfw. II и машин на их базе в масштабе 1/72",
+      "en": "Diecast tanks and military vehicles of Pz.Kpfw. II, scale 1/72"
+    },
+    "titleShort": {
+      "ru": "Готовые модели танков Pz.Kpfw. II и машин на их базе",
+      "en": "Tanks and military vehicles of Pz.Kpfw. II"
+    },
+    "description": {
+      "ru": "На данной странице представлены готовые модели танков Pz.Kpfw. II и машин на их базе в масштабе 1/72",
+      "en": "This page contains 1/72 scale diecast tanks and military vehicles of Pz.Kpfw. II"
+    },
+    "slug": "pz-II",
+    "visible": true,
+    "sortOrder": 2,
+    "section": "germany-armour"
+  },
+  {
+    "name": {
+      "ru": "Pz.Kpfw. III",
+      "en": "Pz.Kpfw. III"
+    },
+    "title": {
+      "ru": "Готовые модели танков Pz.Kpfw. III и машин на их базе в масштабе 1/72",
+      "en": "Diecast tanks and military vehicles of Pz.Kpfw. III, scale 1/72"
+    },
+    "titleShort": {
+      "ru": "Готовые модели танков Pz.Kpfw. III и машин на их базе",
+      "en": "Tanks and military vehicles of Pz.Kpfw. III"
+    },
+    "description": {
+      "ru": "На данной странице представлены готовые модели танков Pz.Kpfw. III и машин на их базе в масштабе 1/72",
+      "en": "This page contains 1/72 scale diecast tanks and military vehicles of Pz.Kpfw. III"
+    },
+    "slug": "pz-III",
+    "visible": true,
+    "sortOrder": 3,
+    "section": "germany-armour"
+  },
+  {
+    "name": {
+      "ru": "Pz.Kpfw. IV",
+      "en": "Pz.Kpfw. IV"
+    },
+    "title": {
+      "ru": "Готовые модели танков Pz.Kpfw. IV и машин на их базе в масштабе 1/72",
+      "en": "Diecast tanks and military vehicles of Pz.Kpfw. IV, scale 1/72"
+    },
+    "titleShort": {
+      "ru": "Готовые модели танков Pz.Kpfw. IV и машин на их базе",
+      "en": "Tanks and military vehicles of Pz.Kpfw. IV"
+    },
+    "description": {
+      "ru": "На данной странице представлены готовые модели танков Pz.Kpfw. IV и машин на их базе в масштабе 1/72",
+      "en": "This page contains 1/72 scale diecast tanks and military vehicles of Pz.Kpfw. IV"
+    },
+    "slug": "pz-IV",
+    "visible": true,
+    "sortOrder": 4,
+    "section": "germany-armour"
+  },
+  {
+    "name": {
+      "ru": "Sd.Kfz.38(t)",
+      "en": "Sd.Kfz.38(t)"
+    },
+    "title": {
+      "ru": "Готовые модели танков Sd.Kfz.38(t) и машин на их базе в масштабе 1/72",
+      "en": "Diecast tanks and military vehicles of Sd.Kfz.38(t), scale 1/72"
+    },
+    "titleShort": {
+      "ru": "Готовые модели танков Sd.Kfz.38(t) и машин на их базе",
+      "en": "Tanks and military vehicles of Sd.Kfz.38(t)"
+    },
+    "description": {
+      "ru": "На данной странице представлены готовые модели танков Sd.Kfz.38(t) и машин на их базе в масштабе 1/72",
+      "en": "This page contains 1/72 scale diecast tanks and military vehicles of Sd.Kfz.38(t)"
+    },
+    "slug": "38t",
+    "visible": true,
+    "sortOrder": 5,
+    "section": "germany-armour"
+  },
+  {
+    "name": {
+      "ru": "Panzer E",
+      "en": "Panzer E"
+    },
+    "title": {
+      "ru": "Готовые модели танков Panzer E и машин на их базе в масштабе 1/72",
+      "en": "Diecast tanks and military vehicles of Panzer E, scale 1/72"
+    },
+    "titleShort": {
+      "ru": "Готовые модели танков Panzer E и машин на их базе",
+      "en": "Tanks and military vehicles of Panzer E"
+    },
+    "description": {
+      "ru": "На данной странице представлены готовые модели танков Panzer E и машин на их базе в масштабе 1/72",
+      "en": "This page contains 1/72 scale diecast tanks and military vehicles of Panzer E"
+    },
+    "slug": "panzer-e",
+    "visible": true,
+    "sortOrder": 6,
+    "section": "germany-armour"
+  },
+  {
+    "name": {
+      "ru": "Бронеавтомобили Германии",
+      "en": "Germany Armored Cars"
+    },
+    "title": {
+      "ru": "Готовые модели бронеавтомобилей Германии в масштабе 1/72",
+      "en": "Diecast Germany armored cars, scale 1/72"
+    },
+    "titleShort": {
+      "ru": "Готовые модели бронеавтомобилей Германии",
+      "en": "Germany armored cars"
+    },
+    "description": {
+      "ru": "На данной странице представлены готовые модели бронеавтомобилей Германии в масштабе 1/72",
+      "en": "This page contains 1/72 scale diecast Germany armored cars"
+    },
+    "slug": "germany-armored-cars",
+    "visible": true,
+    "sortOrder": 7,
+    "section": "germany-armour"
+  },
+  {
+    "name": {
+      "ru": "Автомобили Германии",
+      "en": "Germany Trucks"
+    },
+    "title": {
+      "ru": "Готовые модели автомобилей Германии в масштабе 1/72",
+      "en": "Diecast Germany trucks, scale 1/72"
+    },
+    "titleShort": {
+      "ru": "Готовые модели автомобилей Германии",
+      "en": "Germany trucks"
+    },
+    "description": {
+      "ru": "На данной странице представлены готовые модели автомобилей Германии в масштабе 1/72",
+      "en": "This page contains 1/72 scale diecast Germany trucks"
+    },
+    "slug": "germany-trucks",
+    "visible": true,
+    "sortOrder": 8,
+    "section": "germany-armour"
+  },
+  {
+    "name": {
+      "ru": "Артиллерия Германии",
+      "en": "Germany Artillery"
+    },
+    "title": {
+      "ru": "Готовые модели артиллерии Германии в масштабе 1/72",
+      "en": "Diecast Germany artillery, scale 1/72"
+    },
+    "titleShort": {
+      "ru": "Готовые модели артиллерии Германии",
+      "en": "Germany artillery"
+    },
+    "description": {
+      "ru": "На данной странице представлены готовые модели артиллерии Германии в масштабе 1/72",
+      "en": "This page contains 1/72 scale diecast Germany artillery"
+    },
+    "slug": "germany-artillery",
+    "visible": true,
+    "sortOrder": 9,
+    "section": "germany-armour"
+  },
+  {
+    "name": {
+      "ru": "Прочая техника Германии",
+      "en": "Other Germany armour"
+    },
+    "title": {
+      "ru": "Готовые модели прочей техники Германии в масштабе 1/72",
+      "en": "Other Diecast Germany armour, scale 1/72"
+    },
+    "titleShort": {
+      "ru": "Готовые модели прочей техники Германии",
+      "en": "Other Germany armour"
+    },
+    "description": {
+      "ru": "На данной странице представлены готовые модели прочей техники Германии",
+      "en": "This page contains 1/72 scale other diecast Germany armour"
+    },
+    "slug": "other-germany-armour",
+    "visible": true,
+    "sortOrder": 10,
+    "section": "germany-armour"
+  },
+  {
+    "name": {
+      "ru": "Танки Stuart",
+      "en": "Stuart Tanks"
+    },
+    "title": {
+      "ru": "Готовые модели танков Stuart и машин на их базе в масштабе 1/72",
+      "en": "Diecast tanks and military vehicles of Stuart tanks, scale 1/72"
+    },
+    "titleShort": {
+      "ru": "Готовые модели танков Stuart и машин на их базе",
+      "en": "Stuart tanks"
+    },
+    "description": {
+      "ru": "На данной странице представлены готовые модели танков Stuart и машин на их базе в масштабе 1/72",
+      "en": "This page contains 1/72 scale diecast tanks and military vehicles of Stuart tanks"
+    },
+    "slug": "stuart-tanks",
+    "visible": true,
+    "sortOrder": 1,
+    "section": "usa-armour"
+  },
+  {
+    "name": {
+      "ru": "Танки Sherman",
+      "en": "Sherman Tanks"
+    },
+    "title": {
+      "ru": "Готовые модели танков Sherman и машин на их базе в масштабе 1/72",
+      "en": "Diecast tanks and military vehicles of Sherman tanks, scale 1/72"
+    },
+    "titleShort": {
+      "ru": "Готовые модели танков Sherman и машин на их базе",
+      "en": "Sherman tanks"
+    },
+    "description": {
+      "ru": "На данной странице представлены готовые модели танков Sherman и машин на их базе в масштабе 1/72",
+      "en": "This page contains 1/72 scale diecast tanks and military vehicles of Sherman tanks"
+    },
+    "slug": "sherman-tanks",
+    "visible": true,
+    "sortOrder": 2,
+    "section": "usa-armour"
+  },
+  {
+    "name": {
+      "ru": "Автомобили Studebeker",
+      "en": "Studebeker Trucks"
+    },
+    "title": {
+      "ru": "Готовые модели автомобилей Studebeker в масштабе 1/72",
+      "en": "Diecast Studebeker trucks, scale 1/72"
+    },
+    "titleShort": {
+      "ru": "Готовые модели автомобилей Studebeker",
+      "en": "Studebeker trucks"
+    },
+    "description": {
+      "ru": "На данной странице представлены готовые модели автомобилей Studebeker в масштабе 1/72",
+      "en": "This page contains 1/72 scale diecast Studebeker trucks"
+    },
+    "slug": "studebeker-trucks",
+    "visible": true,
+    "sortOrder": 3,
+    "section": "usa-armour"
+  },
+  {
+    "name": {
+      "ru": "Автомобили GMC",
+      "en": "GMC Trucks"
+    },
+    "title": {
+      "ru": "Готовые модели автомобилей GMC в масштабе 1/72",
+      "en": "Diecast GMC trucks, scale 1/72"
+    },
+    "titleShort": {
+      "ru": "Готовые модели автомобилей GMC",
+      "en": "GMC trucks"
+    },
+    "description": {
+      "ru": "На данной странице представлены готовые модели автомобилей GMC в масштабе 1/72",
+      "en": "This page contains 1/72 scale diecast GMC trucks"
+    },
+    "slug": "gmc-trucks",
+    "visible": true,
+    "sortOrder": 4,
+    "section": "usa-armour"
+  },
+  {
+    "name": {
+      "ru": "Автомобили Ford",
+      "en": "Ford Trucks"
+    },
+    "title": {
+      "ru": "Готовые модели автомобилей Ford в масштабе 1/72",
+      "en": "Diecast Ford trucks, scale 1/72"
+    },
+    "titleShort": {
+      "ru": "Готовые модели автомобилей Ford",
+      "en": "Ford trucks"
+    },
+    "description": {
+      "ru": "На данной странице представлены готовые модели автомобилей Ford в масштабе 1/72",
+      "en": "This page contains 1/72 scale diecast Ford trucks"
+    },
+    "slug": "ford-trucks",
+    "visible": true,
+    "sortOrder": 5,
+    "section": "usa-armour"
+  },
+  {
+    "name": {
+      "ru": "Автомобили Chevrolet",
+      "en": "Chevrolet Trucks"
+    },
+    "title": {
+      "ru": "Готовые модели автомобилей Chevrolet в масштабе 1/72",
+      "en": "Diecast Chevrolet trucks, scale 1/72"
+    },
+    "titleShort": {
+      "ru": "Готовые модели автомобилей Chevrolet",
+      "en": "Chevrolet trucks"
+    },
+    "description": {
+      "ru": "На данной странице представлены готовые модели автомобилей Chevrolet в масштабе 1/72",
+      "en": "This page contains 1/72 scale diecast Chevrolet trucks"
+    },
+    "slug": "chevrolet-trucks",
+    "visible": true,
+    "sortOrder": 6,
+    "section": "usa-armour"
+  },
+  {
+    "name": {
+      "ru": "Прочая техника США",
+      "en": "Other USA Armour"
+    },
+    "title": {
+      "ru": "Готовые модели прочей техники США в масштабе 1/72",
+      "en": "Other diecast USA armour, scale 1/72"
+    },
+    "titleShort": {
+      "ru": "Готовые модели прочей техники США",
+      "en": "Other USA armour"
+    },
+    "description": {
+      "ru": "На данной странице представлены готовые модели прочей техники США в масштабе 1/72",
+      "en": "This page contains 1/72 scale other diecast USA armour"
+    },
+    "slug": "other-USA-armour",
+    "visible": true,
+    "sortOrder": 7,
+    "section": "usa-armour"
+  },
+  {
+    "name": {
+      "ru": "Техника Венгрии",
+      "en": "Hungary Armour"
+    },
+    "title": {
+      "ru": "Готовые модели техники Венгрии в масштабе 1/72",
+      "en": "Diecast tanks and military vehicles of Hungary, scale 1/72"
+    },
+    "titleShort": {
+      "ru": "Готовые модели техники Венгрии",
+      "en": "Tanks and military vehicles of Hungary"
+    },
+    "description": {
+      "ru": "На данной странице представлены готовые модели техники Венгрии в масштабе 1/72",
+      "en": "This page contains 1/72 scale diecast tanks and military vehicles of Hungary"
+    },
+    "slug": "hungary-armour",
+    "visible": true,
+    "sortOrder": 1,
+    "section": "other-foreign-armour"
+  },
+  {
+    "name": {
+      "ru": "Техника Италии",
+      "en": "Italy Armour"
+    },
+    "title": {
+      "ru": "Готовые модели техники Италии в масштабе 1/72",
+      "en": "Diecast tanks and military vehicles of Italy, scale 1/72"
+    },
+    "titleShort": {
+      "ru": "Готовые модели техники Италии",
+      "en": "Tanks and military vehicles of Italy"
+    },
+    "description": {
+      "ru": "На данной странице представлены готовые модели техники Италии в масштабе 1/72",
+      "en": "This page contains 1/72 scale diecast tanks and military vehicles of Italy"
+    },
+    "slug": "italy-armour",
+    "visible": true,
+    "sortOrder": 2,
+    "section": "other-foreign-armour"
+  },
+  {
+    "name": {
+      "ru": "Техника Польши",
+      "en": "Polish Armour"
+    },
+    "title": {
+      "ru": "Готовые модели техники Польши в масштабе 1/72",
+      "en": "Diecast tanks and military vehicles of Polish, scale 1/72"
+    },
+    "titleShort": {
+      "ru": "Готовые модели техники Польши",
+      "en": "Tanks and military vehicles of Polish"
+    },
+    "description": {
+      "ru": "На данной странице представлены готовые модели техники Польши в масштабе 1/72",
+      "en": "This page contains 1/72 scale diecast tanks and military vehicles of Polish"
+    },
+    "slug": "polish-armour",
+    "visible": true,
+    "sortOrder": 3,
+    "section": "other-foreign-armour"
+  },
+  {
+    "name": {
+      "ru": "Техника Франции",
+      "en": "France Armour"
+    },
+    "title": {
+      "ru": "Готовые модели техники Франции в масштабе 1/72",
+      "en": "Diecast tanks and military vehicles of France, scale 1/72"
+    },
+    "titleShort": {
+      "ru": "Готовые модели техники Франции",
+      "en": "Tanks and military vehicles of France"
+    },
+    "description": {
+      "ru": "На данной странице представлены готовые модели техники Франции в масштабе 1/72",
+      "en": "This page contains 1/72 scale diecast tanks and military vehicles of France"
+    },
+    "slug": "france-armour",
+    "visible": true,
+    "sortOrder": 4,
+    "section": "other-foreign-armour"
+  },
+  {
+    "name": {
+      "ru": "Техника Японии",
+      "en": "Japanese Armour"
+    },
+    "title": {
+      "ru": "Готовые модели техники Японии в масштабе 1/72",
+      "en": "Diecast tanks and military vehicles of Japanese, scale 1/72"
+    },
+    "titleShort": {
+      "ru": "Готовые модели техники Японии",
+      "en": "Tanks and military vehicles of Japanese"
+    },
+    "description": {
+      "ru": "На данной странице представлены готовые модели техники Японии в масштабе 1/72",
+      "en": "This page contains 1/72 scale diecast tanks and military vehicles of Japanese"
+    },
+    "slug": "japanese-armour",
+    "visible": true,
+    "sortOrder": 5,
+    "section": "other-foreign-armour"
+  },
+  {
+    "name": {
+      "ru": "Прочая зарубежная техника",
+      "en": "Other Foreign Armour"
+    },
+    "title": {
+      "ru": "Готовые модели прочей зарубежной техники в масштабе 1/72",
+      "en": "Other diecast tanks and military vehicles of foreign armour, scale 1/72"
+    },
+    "titleShort": {
+      "ru": "Готовые модели прочей зарубежной техники",
+      "en": "Other tanks and military vehicles of foreign armour"
+    },
+    "description": {
+      "ru": "На данной странице представлены готовые модели прочей зарубежной техники в масштабе 1/72",
+      "en": "This page contains 1/72 scale other diecast tanks and military vehicles of foreign armour"
+    },
+    "slug": "other-foreign-armour",
+    "visible": true,
+    "sortOrder": 6,
+    "section": "other-foreign-armour"
+  },
+  {
+    "name": {
+      "ru": "Танки БТ",
+      "en": "BT Tanks"
+    },
+    "title": {
+      "ru": "Готовые модели танков БТ и машин на их базе в масштабе 1/72",
+      "en": "Diecast BT tanks, scale 1/72"
+    },
+    "titleShort": {
+      "ru": "Готовые модели танков БТ и машин на их базе",
+      "en": "BT tanks"
+    },
+    "description": {
+      "ru": "На данной странице представлены готовые модели танков БТ и машин на их базе в масштабе 1/72",
+      "en": "This page contains 1/72 scale diecast BT tanks"
+    },
+    "slug": "bt-tanks",
+    "visible": true,
+    "sortOrder": 1,
+    "section": "soviet-armour-before-1945"
+  },
+  {
+    "name": {
+      "ru": "Танки Т-26 ",
+      "en": "T-26 Tanks"
+    },
+    "title": {
+      "ru": "Готовые модели танков Т-26 и машин на их базе в масштабе 1/72",
+      "en": "Diecast T-26 tanks, scale 1/72"
+    },
+    "titleShort": {
+      "ru": "Готовые модели танков Т-26 и машин на их базе",
+      "en": "T-26 tanks"
+    },
+    "description": {
+      "ru": "На данной странице представлены готовые модели танков Т-26 и машин на их базе в масштабе 1/72",
+      "en": "This page contains 1/72 scale diecast T-26 tanks"
+    },
+    "slug": "t-26",
+    "visible": true,
+    "sortOrder": 2,
+    "section": "soviet-armour-before-1945"
+  },
+  {
+    "name": {
+      "ru": "Танки Т-37 и Т-38",
+      "en": "T-37 & T-38 Tanks"
+    },
+    "title": {
+      "ru": "Готовые модели танков Т-37 и Т-38 и машин на их базе в масштабе 1/72",
+      "en": "Diecast T-37 & T-38 tanks, scale 1/72"
+    },
+    "titleShort": {
+      "ru": "Готовые модели танков Т-37 и Т-38 и машин на их базе",
+      "en": "T-37 & T-38 tanks"
+    },
+    "description": {
+      "ru": "На данной странице представлены готовые модели танков Т-37 и Т-38 и машин на их базе в масштабе 1/72",
+      "en": "This page contains 1/72 scale diecast T-37 & T-38 tanks"
+    },
+    "slug": "t-37-t-38",
+    "visible": true,
+    "sortOrder": 3,
+    "section": "soviet-armour-before-1945"
+  },
+  {
+    "name": {
+      "ru": "Танки Т-30 - Т-90",
+      "en": "T-30 - T-90 Tanks"
+    },
+    "title": {
+      "ru": "Готовые модели танков Т-30 - Т-90 и машин на их базе в масштабе 1/72",
+      "en": "Diecast T-30 - T-90 tanks, scale 1/72"
+    },
+    "titleShort": {
+      "ru": "Готовые модели танков Т-30 - Т-90 и машин на их базе",
+      "en": "T-30 - T-90 tanks"
+    },
+    "description": {
+      "ru": "На данной странице представлены готовые модели танков Т-30 - Т-90 и машин на их базе в масштабе 1/72",
+      "en": "This page contains 1/72 scale diecast T-30 - T-90 tanks"
+    },
+    "slug": "t-30-t-90",
+    "visible": true,
+    "sortOrder": 4,
+    "section": "soviet-armour-before-1945"
+  },
+  {
+    "name": {
+      "ru": "Танки Т-34",
+      "en": "T-34 Tanks"
+    },
+    "title": {
+      "ru": "Готовые модели танков Т-34 и машин на их базе в масштабе 1/72",
+      "en": "Diecast T-34 tanks, scale 1/72"
+    },
+    "titleShort": {
+      "ru": "Готовые модели танков Т-34 и машин на их базе",
+      "en": "T-34 tanks"
+    },
+    "description": {
+      "ru": "На данной странице представлены готовые модели танков Т-34 и машин на их базе в масштабе 1/72",
+      "en": "This page contains 1/72 scale diecast T-34 tanks"
+    },
+    "slug": "t-34",
+    "visible": true,
+    "sortOrder": 5,
+    "section": "soviet-armour-before-1945"
+  },
+  {
+    "name": {
+      "ru": "Танки КВ",
+      "en": "KV Tanks"
+    },
+    "title": {
+      "ru": "Готовые модели танков КВ и машин на их базе в масштабе 1/72",
+      "en": "Diecast KV tanks, scale 1/72"
+    },
+    "titleShort": {
+      "ru": "Готовые модели танков КВ и машин на их базе",
+      "en": "KV tanks"
+    },
+    "description": {
+      "ru": "На данной странице представлены готовые модели танков КВ и машин на их базе в масштабе 1/72",
+      "en": "This page contains 1/72 scale diecast KV tanks"
+    },
+    "slug": "kv-tanks",
+    "visible": true,
+    "sortOrder": 6,
+    "section": "soviet-armour-before-1945"
+  },
+  {
+    "name": {
+      "ru": "Танки ИС",
+      "en": "IS Tanks"
+    },
+    "title": {
+      "ru": "Готовые модели танков ИС и машин на их базе в масштабе 1/72",
+      "en": "Diecast IS tanks, scale 1/72"
+    },
+    "titleShort": {
+      "ru": "Готовые модели танков ИС и машин на их базе",
+      "en": "IS tanks"
+    },
+    "description": {
+      "ru": "На данной странице представлены готовые модели танков ИС и машин на их базе в масштабе 1/72",
+      "en": "This page contains 1/72 scale diecast IS tanks"
+    },
+    "slug": "is-tanks",
+    "visible": true,
+    "sortOrder": 7,
+    "section": "soviet-armour-before-1945"
+  },
+  {
+    "name": {
+      "ru": "Автомобили ЗИС",
+      "en": "ZIS Trucks"
+    },
+    "title": {
+      "ru": "Готовые модели автомобилей ЗИС в масштабе 1/72",
+      "en": "Diecast ZIS trucks, scale 1/72"
+    },
+    "titleShort": {
+      "ru": "Готовые модели автомобилей ЗИС",
+      "en": "ZIS trucks"
+    },
+    "description": {
+      "ru": "На данной странице представлены готовые модели автомобилей ЗИС в масштабе 1/72",
+      "en": "This page contains 1/72 scale diecast ZIS trucks"
+    },
+    "slug": "zis-trucks-early",
+    "visible": true,
+    "sortOrder": 8,
+    "section": "soviet-armour-before-1945"
+  },
+  {
+    "name": {
+      "ru": "Автомобили ГАЗ",
+      "en": "GAZ Trucks"
+    },
+    "title": {
+      "ru": "Готовые модели автомобилей ГАЗ в масштабе 1/72",
+      "en": "Diecast tanks and military vehicles of GAZ trucks, scale 1/72"
+    },
+    "titleShort": {
+      "ru": "Готовые модели автомобилей ГАЗ",
+      "en": "GAZ trucks"
+    },
+    "description": {
+      "ru": "На данной странице представлены готовые модели автомобилей ГАЗ в масштабе 1/72",
+      "en": "This page contains 1/72 scale diecast tanks and military vehicles of GAZ trucks"
+    },
+    "slug": "gaz-trucks-early",
+    "visible": true,
+    "sortOrder": 9,
+    "section": "soviet-armour-before-1945"
+  },
+  {
+    "name": {
+      "ru": "Автомобили ЯГ",
+      "en": "YAG Trucks"
+    },
+    "title": {
+      "ru": "Готовые модели автомобилей ЯГ в масштабе 1/72",
+      "en": "Diecast YAG trucks, scale 1/72"
+    },
+    "titleShort": {
+      "ru": "Готовые модели автомобилей ЯГ",
+      "en": "YAG trucks"
+    },
+    "description": {
+      "ru": "На данной странице представлены готовые модели автомобилей ЯГ в масштабе 1/72",
+      "en": "This page contains 1/72 scale diecast YAG trucks"
+    },
+    "slug": "yag-trucks",
+    "visible": true,
+    "sortOrder": 10,
+    "section": "soviet-armour-before-1945"
+  },
+  {
+    "name": {
+      "ru": "Советские бронеавтомобили",
+      "en": "Soviet Armored Cars"
+    },
+    "title": {
+      "ru": "Готовые модели советских бронеавтомобилей в масштабе 1/72",
+      "en": "Diecast soviet armored cars, scale 1/72"
+    },
+    "titleShort": {
+      "ru": "Готовые модели советских бронеавтомобилей",
+      "en": "Soviet armored cars"
+    },
+    "description": {
+      "ru": "На данной странице представлены готовые модели советских бронеавтомобилей в масштабе 1/72",
+      "en": "This page contains 1/72 scale diecast soviet armored cars"
+    },
+    "slug": "soviet-armored-cars-early",
+    "visible": true,
+    "sortOrder": 11,
+    "section": "soviet-armour-before-1945"
+  },
+  {
+    "name": {
+      "ru": "Советская артиллерия",
+      "en": "Soviet Artillery"
+    },
+    "title": {
+      "ru": "Готовые модели советской артиллерии в масштабе 1/72",
+      "en": "Diecast soviet artillery, scale 1/72"
+    },
+    "titleShort": {
+      "ru": "Готовые модели советской артиллерии",
+      "en": "Soviet artillery"
+    },
+    "description": {
+      "ru": "На данной странице представлены готовые модели советской артиллерии в масштабе 1/72",
+      "en": "This page contains 1/72 scale diecast soviet artillery"
+    },
+    "slug": "soviet-artillery-early",
+    "visible": true,
+    "sortOrder": 12,
+    "section": "soviet-armour-before-1945"
+  },
+  {
+    "name": {
+      "ru": "Советская железнодорожная техника",
+      "en": "Soviet Railroad Armour"
+    },
+    "title": {
+      "ru": "Готовые модели советской железнодорожной техники в масштабе 1/72",
+      "en": "Diecast soviet railroad armour, scale 1/72"
+    },
+    "titleShort": {
+      "ru": "Готовые модели советской железнодорожной техники",
+      "en": "Soviet railroad armour"
+    },
+    "description": {
+      "ru": "На данной странице представлены готовые модели советской железнодорожной техники в масштабе 1/72",
+      "en": "This page contains 1/72 scale diecast soviet railroad armour"
+    },
+    "slug": "soviet-railroad-armour",
+    "visible": true,
+    "sortOrder": 13,
+    "section": "soviet-armour-before-1945"
+  },
+  {
+    "name": {
+      "ru": "Прочая советская техника до 1945 года",
+      "en": "Other Soviet Armour before 1945"
+    },
+    "title": {
+      "ru": "Прочие готовые модели советской техники до 1945 года в масштабе 1/72",
+      "en": "Other diecast soviet armour before 1945, scale 1/72"
+    },
+    "titleShort": {
+      "ru": "Прочие готовые модели советской техники до 1945 года",
+      "en": "Other Soviet armour before 1945"
+    },
+    "description": {
+      "ru": "На данной странице представлены прочие готовые модели советской техники до 1945 года в масштабе 1/72",
+      "en": "This page contains 1/72 scale other diecast soviet armour before 1945"
+    },
+    "slug": "other-early-soviet-armour",
+    "visible": true,
+    "sortOrder": 14,
+    "section": "soviet-armour-before-1945"
+  },
+  {
+    "name": {
+      "ru": "Танки Т-44, Т-54 и Т-55",
+      "en": "T-44 & T-54 & T-55 Tanks"
+    },
+    "title": {
+      "ru": "Готовые модели танков Т-54 и Т-55 и машин на их базе в масштабе 1/72",
+      "en": "Diecast tanks and military vehicles of T-54 & T-55, scale 1/72"
+    },
+    "titleShort": {
+      "ru": "Готовые модели танков Т-54 и Т-55 и машин на их базе",
+      "en": "T-54 & T-55 tanks"
+    },
+    "description": {
+      "ru": "На данной странице представлены готовые модели танков Т-54 и Т-55 и машин на их базе в масштабе 1/72",
+      "en": "This page contains 1/72 scale diecast tanks and military vehicles of T-54 & T-55"
+    },
+    "slug": "t-44-t-54-t-55",
+    "visible": true,
+    "sortOrder": 1,
+    "section": "soviet-armour-after-1945"
+  },
+  {
+    "name": {
+      "ru": "Танки Т-64",
+      "en": "T-64 Tanks"
+    },
+    "title": {
+      "ru": "Готовые модели танков Т-64 и машин на их базе в масштабе 1/72",
+      "en": "Diecast tanks and military vehicles of T-64, scale 1/72"
+    },
+    "titleShort": {
+      "ru": "Готовые модели танков Т-64 и машин на их базе",
+      "en": "T-64 tanks"
+    },
+    "description": {
+      "ru": "На данной странице представлены готовые модели танков Т-64 и машин на их базе в масштабе 1/72",
+      "en": "This page contains 1/72 scale diecast tanks and military vehicles of T-64"
+    },
+    "slug": "t-64",
+    "visible": true,
+    "sortOrder": 2,
+    "section": "soviet-armour-after-1945"
+  },
+  {
+    "name": {
+      "ru": "Танки Т-72 и Т-90",
+      "en": "T-72 & T-90 Tanks"
+    },
+    "title": {
+      "ru": "Готовые модели танков Т-72 и Т-90 и машин на их базе в масштабе 1/72",
+      "en": "Diecast tanks and military vehicles of T-72 & T-90, scale 1/72"
+    },
+    "titleShort": {
+      "ru": "Готовые модели танков Т-72 и Т-90 и машин на их базе",
+      "en": "T-72 & T-90 tanks"
+    },
+    "description": {
+      "ru": "На данной странице представлены готовые модели танков Т-72 и Т-90 и машин на их базе в масштабе 1/72",
+      "en": "This page contains 1/72 scale diecast tanks and military vehicles of T-72 & T-90"
+    },
+    "slug": "t-72-t-90",
+    "visible": true,
+    "sortOrder": 3,
+    "section": "soviet-armour-after-1945"
+  },
+  {
+    "name": {
+      "ru": "ПТ-76 и БТР-50",
+      "en": "PT-76 & BTR-50"
+    },
+    "title": {
+      "ru": "Готовые модели ПТ-76 и БТР-50 в масштабе 1/72",
+      "en": "Diecast military vehicles of PT-76 & BTR-50, scale 1/72"
+    },
+    "titleShort": {
+      "ru": "Готовые модели ПТ-76 и БТР-50",
+      "en": "PT-76 & BTR-50"
+    },
+    "description": {
+      "ru": "На данной странице представлены готовые модели ПТ-76 и БТР-50 в масштабе 1/72",
+      "en": "This page contains 1/72 scale diecast military vehicles of PT-76 & BTR-50"
+    },
+    "slug": "pt-76-btr-50",
+    "visible": true,
+    "sortOrder": 4,
+    "section": "soviet-armour-after-1945"
+  },
+  {
+    "name": {
+      "ru": "БМП и БМД",
+      "en": "BMP & BMD"
+    },
+    "title": {
+      "ru": "Готовые модели БМП и БМД в масштабе 1/72",
+      "en": "Diecast military vehicles of BMP & BMD, scale 1/72"
+    },
+    "titleShort": {
+      "ru": "Готовые модели БМП и БМД",
+      "en": "BMP & BMD"
+    },
+    "description": {
+      "ru": "На данной странице представлены готовые модели БМП и БМД в масштабе 1/72",
+      "en": "This page contains 1/72 scale diecast military vehicles of BMP & BMD"
+    },
+    "slug": "bmp-bmd",
+    "visible": true,
+    "sortOrder": 5,
+    "section": "soviet-armour-after-1945"
+  },
+  {
+    "name": {
+      "ru": "Автомобили МАЗ и МЗКТ",
+      "en": "MAZ & MZKT Trucks"
+    },
+    "title": {
+      "ru": "Готовые модели автомобилей МАЗ и МЗКТ в масштабе 1/72",
+      "en": "Diecast MAZ & MZKT trucks, scale 1/72"
+    },
+    "titleShort": {
+      "ru": "Готовые модели автомобилей МАЗ и МЗКТ",
+      "en": "MAZ & MZKT trucks"
+    },
+    "description": {
+      "ru": "На данной странице представлены готовые модели автомобилей МАЗ и МЗКТ в масштабе 1/72",
+      "en": "This page contains 1/72 scale diecast MAZ & MZKT trucks"
+    },
+    "slug": "maz-mzkt",
+    "visible": true,
+    "sortOrder": 6,
+    "section": "soviet-armour-after-1945"
+  },
+  {
+    "name": {
+      "ru": "Автомобили ГАЗ",
+      "en": "GAZ Trucks"
+    },
+    "title": {
+      "ru": "Готовые модели автомобилей ГАЗ в масштабе 1/72",
+      "en": "Diecast GAZ trucks, scale 1/72"
+    },
+    "titleShort": {
+      "ru": "Готовые модели автомобилей ГАЗ",
+      "en": "GAZ trucks"
+    },
+    "description": {
+      "ru": "На данной странице представлены готовые модели автомобилей ГАЗ в масштабе 1/72",
+      "en": "This page contains 1/72 scale diecast GAZ trucks"
+    },
+    "slug": "gaz-trucks-late",
+    "visible": true,
+    "sortOrder": 7,
+    "section": "soviet-armour-after-1945"
+  },
+  {
+    "name": {
+      "ru": "Автомобили УРАЛ",
+      "en": "URAL Trucks"
+    },
+    "title": {
+      "ru": "Готовые модели автомобилей УРАЛ в масштабе 1/72",
+      "en": "Diecast URAL trucks, scale 1/72"
+    },
+    "titleShort": {
+      "ru": "Готовые модели автомобилей УРАЛ",
+      "en": "URAL trucks"
+    },
+    "description": {
+      "ru": "На данной странице представлены готовые модели автомобилей УРАЛ в масштабе 1/72",
+      "en": "This page contains 1/72 scale diecast URAL trucks"
+    },
+    "slug": "ural-trucks",
+    "visible": true,
+    "sortOrder": 8,
+    "section": "soviet-armour-after-1945"
+  },
+  {
+    "name": {
+      "ru": "Автомобили ЗИЛ и ЗИС",
+      "en": "ZIL & ZIS Trucks"
+    },
+    "title": {
+      "ru": "Готовые модели автомобилей ЗИЛ и ЗИС в масштабе 1/72",
+      "en": "Diecast ZIL & ZIS trucks, scale 1/72"
+    },
+    "titleShort": {
+      "ru": "Готовые модели автомобилей ЗИЛ и ЗИС",
+      "en": "ZIL & ZIS trucks"
+    },
+    "description": {
+      "ru": "На данной странице представлены готовые модели автомобилей ЗИЛ и ЗИС в масштабе 1/72",
+      "en": "This page contains 1/72 scale diecast ZIL & ZIS trucks"
+    },
+    "slug": "zil-zis-trucks-late",
+    "visible": true,
+    "sortOrder": 9,
+    "section": "soviet-armour-after-1945"
+  },
+  {
+    "name": {
+      "ru": "Советская артиллерия",
+      "en": "Soviet Artillery"
+    },
+    "title": {
+      "ru": "Готовые модели советской артиллерии в масштабе 1/72",
+      "en": "Diecast soviet artillery, scale 1/72"
+    },
+    "titleShort": {
+      "ru": "Готовые модели советской артиллерии",
+      "en": "Soviet artillery"
+    },
+    "description": {
+      "ru": "На данной странице представлены готовые модели советской артиллерии в масштабе 1/72",
+      "en": "This page contains 1/72 scale diecast soviet artillery"
+    },
+    "slug": "soviet-artillery-late",
+    "visible": true,
+    "sortOrder": 10,
+    "section": "soviet-armour-after-1945"
+  },
+  {
+    "name": {
+      "ru": "Прочая советская техника после 1945 года",
+      "en": "Other soviet armour after 1945"
+    },
+    "title": {
+      "ru": "Прочие готовые модели советской техники после 1945 года в масштабе 1/72",
+      "en": "Other diecast soviet armour after 1945, scale 1/72"
+    },
+    "titleShort": {
+      "ru": "Прочие готовые модели советской техники после 1945 года",
+      "en": "Other Soviet armour after 1945"
+    },
+    "description": {
+      "ru": "На данной странице представлены прочие готовые модели советской техники после 1945 года в масштабе 1/72",
+      "en": "This page contains 1/72 scale other diecast soviet armour after 1945"
+    },
+    "slug": "other-late-soviet-armour",
+    "visible": true,
+    "sortOrder": 11,
+    "section": "soviet-armour-after-1945"
+  }
+]
