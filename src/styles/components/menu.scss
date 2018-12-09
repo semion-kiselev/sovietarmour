@@ -1,0 +1,53 @@
+.b-menu {
+
+	&:after {
+		content: '';
+		display: block;
+		clear: both;
+	}
+
+	.menu__item {
+		float: left;
+		padding: 10px;
+		width: 33.33333333%;
+	}
+
+	.menu__link {
+		display: block;
+	}
+
+	.menu__btn {
+		display: block;
+		width: 100%;
+		height: 50px;
+		border: 1px solid rgba(255,255,255,0.25);
+		border-radius: 4px;
+		background: none;
+		text-align: center;
+		font-size: 16px;
+		color: #fff;
+		cursor: pointer;
+		transition: border-color 0.2s ease;
+
+		&.__is-active,
+		&:hover {
+			border-color: $hover; 
+		}
+	}
+}
+
+@media screen and (max-width: $tablet-medium-breakpoint) {
+	.b-menu {
+		.menu__item {
+			width: 50%;
+		}
+	}
+}
+
+@media screen and (max-width: $phone-breakpoint) {
+	.b-menu {
+		.menu__item {
+			width: 100%;
+		}
+	}	
+}

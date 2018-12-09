@@ -1,0 +1,41 @@
+.b-locales {
+
+	&:after {
+		content: '';
+		display: block;
+		clear: both;
+	}
+
+	.locales__item {
+		float: left;
+		height: 100px;
+		width: 100px;
+		margin-left: 20px;
+		padding-top: 26px;
+		border: 1px solid rgba(255,255,255,0.25);
+		border-radius: 4px;
+		color: $overlay-text-color;
+		text-transform: uppercase;
+		font-size: 40px;
+		text-align: center;
+		transition: border-color 0.2s ease;
+
+		&:first-child {
+			margin-left: 0;
+		}
+
+		&.__is-active,
+		&:hover {
+			border-color: $hover;
+		}
+	}
+
+	@media screen and (max-width: $phone-breakpoint) {
+		.locales__item {
+			width: 60px;
+			height: 60px;
+			padding-top: 16px;
+			font-size: 24px;
+		}
+	}
+}

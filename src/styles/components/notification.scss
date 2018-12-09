@@ -1,0 +1,19 @@
+.b-notification {
+    display: none;
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    width: 300px;
+    padding: 12px 8px;
+    color: $overlay-text-color;
+
+    &.__success {
+        border-left: 8px solid #074900;
+        background: #0a6800;
+    }
+
+    &.__error {
+        border-left: 8px solid #580004;
+        background: #7d0006;
+    }
+}

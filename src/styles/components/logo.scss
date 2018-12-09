@@ -1,0 +1,16 @@
+.b-logo	{
+	position: relative;
+	top: 7px;
+	display: block;
+	width: 137px;
+	height: 60px;
+	color: #000;
+
+}
+
+@media screen and (max-width: $phone-breakpoint) {
+	.b-logo {
+		width: 114px;
+		height: 50px;
+	}
+}

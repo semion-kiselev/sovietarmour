@@ -1,0 +1,78 @@
+.b-overlay {
+	display: none;
+	position: fixed;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	background-color: rgba(20,22,24,0.95);
+	opacity: 0;
+	z-index: 10;
+
+	.overlay__close {
+		position: absolute;
+		top: 25px;
+		right: 25px;
+		width: $default-icon-size;
+		height: $default-icon-size;
+		color: $overlay-text-color;
+		background-size: $default-icon-size $default-icon-size;
+		cursor: pointer;
+		@include hover-color-transition;
+
+		&:hover {
+			color: $hover;
+		}
+	}
+
+	&.__search {
+		.overlay__content {
+			position: absolute;
+			top: 40%;
+			left: 20%;
+			right: 20%;
+		}
+	}
+
+	&.__locale {
+		.overlay__content {
+			position: absolute;
+			top: 40%;
+			left: 20%;
+			right: 20%;
+			text-align: center;
+		}
+
+		.b-locales {
+			display: inline-block;
+		}	
+	}
+
+	&.__menu {
+		.overlay__content {
+			max-width: 900px;
+			margin: 100px auto 0;
+			padding: 0 30px;
+		}
+	}
+}
+
+@media screen and (max-width: $phone-breakpoint) {
+	.b-overlay {
+		&.__locale {
+			.overlay__content {
+				top: 100px;
+				left: 10%;
+				right: 10%;
+			}
+		}
+
+		&.__search {
+			.overlay__content {
+				top: 100px;
+				left: 10%;
+				right: 10%;
+			}
+		}
+	}
+}

@@ -1,0 +1,12 @@
+html {
+	overflow-y: scroll;
+
+    &.__is-frozen {
+        position: fixed;
+        width: 100%;
+    }
+
+    &.__scroll-is-hidden {
+        overflow: hidden;
+    }
+}

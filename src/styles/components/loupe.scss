@@ -1,0 +1,106 @@
+.b-loupe {
+	position: fixed;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	background: rgba(20, 22, 24, 0.95);
+	opacity: 0;
+	z-index: 10;
+
+	.loupe__image {
+		display: none;
+		position: absolute;
+		transform: scale(0);
+		z-index: 12;
+		transition: transform .4s ease;
+
+		&.__full-size {
+			transform: scale(1);
+		}
+	}
+
+	.loupe__close {
+		position: absolute;
+		top: 25px;
+		right: 25px;
+		width: $default-icon-size;
+		height: $default-icon-size;
+		color: $overlay-text-color;
+		background-size: $default-icon-size $default-icon-size;
+		cursor: pointer;
+		@include hover-color-transition;
+
+		&:hover {
+			color: $hover;
+		}
+	}
+
+	.loupe__loader,	
+	.loupe__loader:before,	
+	.loupe__loader:after {
+		border-radius: 50%;
+		width: 2.5em;
+		height: 2.5em;
+		-webkit-animation-fill-mode: both;
+		animation-fill-mode: both;
+		-webkit-animation: load7 1.8s infinite ease-in-out;
+		animation: load7 1.8s infinite ease-in-out;
+	}
+
+	.loupe__loader:before,	
+	.loupe__loader:after {
+		content: '';
+		position: absolute;
+		top: 0;
+	}
+
+	.loupe__loader:before {
+		left: -3.5em;
+		-webkit-animation-delay: -0.32s;
+		animation-delay: -0.32s;
+	}
+
+	.loupe__loader:after {
+		left: 3.5em;
+	}
+
+	.loupe__loader {
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		color: $overlay-text-color;
+		font-size: 10px;
+		margin-left: -1.25em;
+		margin-top: -1.25em;
+		text-indent: -9999em;
+		-webkit-transform: translateZ(0);
+		-ms-transform: translateZ(0);
+		transform: translateZ(0);
+		-webkit-animation-delay: -0.16s;
+		animation-delay: -0.16s;
+		z-index: 11;
+	}
+
+	@-webkit-keyframes load7 {
+		0%,
+		80%,
+		100% {
+			box-shadow: 0 2.5em 0 -1.3em;
+		}
+		40% {
+			box-shadow: 0 2.5em 0 0;
+		}
+	}
+
+	@keyframes load7 {
+		0%,
+		80%,
+		100% {
+			box-shadow: 0 2.5em 0 -1.3em;
+		}
+		40% {
+			box-shadow: 0 2.5em 0 0;
+		}
+	}
+}

@@ -1,0 +1,50 @@
+$sidebarHeaderHeight: 69px;
+
+.b-sidebar {
+	display: none;
+	position: fixed;
+	top: 0;
+	bottom: 0;
+	right: 0;
+	width: 300px;
+	background-color: #fff;
+	box-shadow: #000 0 0 10px;
+	z-index: 6;
+	outline: none;
+
+	.sidebar__close {
+		position: absolute;
+		top: 24px;
+		right: 20px;
+		width: $default-icon-size;
+		height: $default-icon-size;
+		background-size: $default-icon-size $default-icon-size;
+		color: #fff;
+		cursor: pointer;
+		@include hover-color-transition;
+
+		&:hover {
+			color: $top-nav-hover;
+		}
+	}
+
+	.sidebar__header {
+		height: $sidebarHeaderHeight;
+		padding-top: 26px;
+		background: $red;
+		text-align: center;
+		text-transform: uppercase;
+		font-size: 14px;
+		color: #fff;
+		z-index: 10;
+	}
+
+	.sidebar__content {
+		height: calc(100% - #{$sidebarHeaderHeight});
+		overflow: auto;
+	}
+
+	@media screen and (max-width: 576px) {
+		width: 100%;
+	}
+}
