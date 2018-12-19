@@ -25,7 +25,8 @@
 		font-weight: bold;
 		font-size: 14px;
 		color: #f0f0f0;
-		line-height: 67px;
+        line-height: 67px;
+        cursor: pointer;
 		@include hover-color-border-transition;
 
 		&:hover,

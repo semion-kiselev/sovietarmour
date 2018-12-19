@@ -5,6 +5,7 @@
   "author": "Semion Kiselev <semion.kiselev@gmail.com>",
   "dependencies": {
     "autoprefixer": "9.4.2",
+    "classnames": "^2.2.6",
     "gatsby": "2.0.53",
     "gatsby-plugin-postcss": "2.0.2",
     "gatsby-plugin-react-helmet": "3.0.2",

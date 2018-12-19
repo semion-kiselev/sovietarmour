@@ -12,7 +12,7 @@ const pxToRemOptions = {
     media_query: true
 };
 
-const autoPrefixerOptions = {browsers: ['last 2 versions', 'ie >= 9']};
+const autoPrefixerOptions = {browsers: ['last 2 versions', 'ie >= 11']};
 
 module.exports = {
     siteMetadata: {

@@ -67,7 +67,7 @@
 			.icon {
 				color: $top-nav-hover;
 			}
-		}	
+		}
 	}
 }
 
@@ -88,7 +88,7 @@
 	.b-utils {
 		.utils__item {
 			height: 57px;
-			
+
 			&.__sidebar,
 			&.__search {
 				@include set-icon-size($phone-default-icon-size);

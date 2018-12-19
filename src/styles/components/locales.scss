@@ -1,10 +1,22 @@
 .b-locales {
 
-	&:after {
-		content: '';
-		display: block;
-		clear: both;
-	}
+	.locales__items {
+        position: absolute;
+        top: 40%;
+        left: 20%;
+        right: 20%;
+        text-align: center;
+    }
+
+    .locales__items-inner {
+        display: inline-block;
+
+        &:after {
+            content: '';
+            display: block;
+            clear: both;
+        }
+    }
 
 	.locales__item {
 		float: left;

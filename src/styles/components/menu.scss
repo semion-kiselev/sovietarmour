@@ -1,10 +1,16 @@
 .b-menu {
 
-	&:after {
-		content: '';
-		display: block;
-		clear: both;
-	}
+    .menu__items {
+        max-width: 900px;
+        margin: 100px auto 0;
+        padding: 0 30px;
+
+        &:after {
+            content: '';
+            display: block;
+            clear: both;
+        }
+    }
 
 	.menu__item {
 		float: left;
@@ -31,7 +37,7 @@
 
 		&.__is-active,
 		&:hover {
-			border-color: $hover; 
+			border-color: $hover;
 		}
 	}
 }
@@ -49,5 +55,5 @@
 		.menu__item {
 			width: 100%;
 		}
-	}	
+	}
 }
