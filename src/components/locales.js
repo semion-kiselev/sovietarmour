@@ -1,30 +1,17 @@
 import React, {PureComponent} from 'react';
+import PropTypes from 'prop-types';
 import {navigate, Location} from '@reach/router';
 import cn from 'classnames';
-import Modal from './modal';
-import LocaleIcon from './icons/locale';
+import Overlay from './overlay';
+
 import {locales} from '../constants';
 import {setCookie} from '../utils';
 
-export default class Locale extends PureComponent {
+class Locales extends PureComponent {
     constructor(props) {
         super(props);
 
-        this.state = {
-            localesIsVisible: false
-        };
-
-        this.closeModal = this.closeModal.bind(this);
-        this.showModal = this.showModal.bind(this);
         this.changeLocale = this.changeLocale.bind(this);
-    }
-
-    showModal() {
-        this.setState({localesIsVisible: true});
-    }
-
-    closeModal() {
-        this.setState({localesIsVisible: false});
     }
 
     changeLocale(locale, {pathname}) {
@@ -43,17 +30,14 @@ export default class Locale extends PureComponent {
     }
 
     render() {
-        const {locale: currentLocale} = this.props;
-        const {localesIsVisible} = this.state;
+        const {locale: currentLocale, isVisible, onRequestClose} = this.props;
 
         return (
             <div className="b-locales">
-                <i className="icon" onClick={this.showModal}>
-                    <LocaleIcon />
-                </i>
-                <Modal
-                    isVisible={localesIsVisible}
-                    onRequestClose={this.closeModal}
+
+                <Overlay
+                    isVisible={isVisible}
+                    onRequestClose={onRequestClose}
                 >
                     <div className="locales__items">
                         <Location>
@@ -74,8 +58,16 @@ export default class Locale extends PureComponent {
                             )}
                         </Location>
                     </div>
-                </Modal>
+                </Overlay>
             </div>
         );
     }
 }
+
+Locales.propTypes = {
+    onRequestClose: PropTypes.func.isRequired,
+    isVisible: PropTypes.bool.isRequired,
+    locale: PropTypes.string.isRequired
+};
+
+export default Locales;

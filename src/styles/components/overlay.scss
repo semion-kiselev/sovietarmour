@@ -1,5 +1,5 @@
 .b-overlay {
-	display: none;
+    display: none;
 	position: fixed;
 	top: 0;
 	bottom: 0;
@@ -7,7 +7,16 @@
 	right: 0;
 	background-color: rgba(20,22,24,0.95);
 	opacity: 0;
-	z-index: 10;
+    z-index: 10;
+    transition: opacity .4s ease;
+
+    &.__light {
+        background-color: rgba(0,0,0,0.5);
+    }
+
+    &.__visible {
+        opacity: 1;
+    }
 
 	.overlay__close {
 		position: absolute;
@@ -22,57 +31,6 @@
 
 		&:hover {
 			color: $hover;
-		}
-	}
-
-	&.__search {
-		.overlay__content {
-			position: absolute;
-			top: 40%;
-			left: 20%;
-			right: 20%;
-		}
-	}
-
-	&.__locale {
-		.overlay__content {
-			position: absolute;
-			top: 40%;
-			left: 20%;
-			right: 20%;
-			text-align: center;
-		}
-
-		.b-locales {
-			display: inline-block;
-		}	
-	}
-
-	&.__menu {
-		.overlay__content {
-			max-width: 900px;
-			margin: 100px auto 0;
-			padding: 0 30px;
-		}
-	}
-}
-
-@media screen and (max-width: $phone-breakpoint) {
-	.b-overlay {
-		&.__locale {
-			.overlay__content {
-				top: 100px;
-				left: 10%;
-				right: 10%;
-			}
-		}
-
-		&.__search {
-			.overlay__content {
-				top: 100px;
-				left: 10%;
-				right: 10%;
-			}
 		}
 	}
 }

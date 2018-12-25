@@ -16,3 +16,5 @@ export const itemsArticlesToDisplayInNews = [
     'SA87001',
     'SA87002'
 ];
+
+export const ACCORDION_ITEM_HEIGHT = 51;

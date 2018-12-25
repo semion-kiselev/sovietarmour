@@ -1,0 +1,13 @@
+.b-cards {
+    &:after {
+		content: '';
+		display: block;
+		clear: both;
+    }
+
+    .cards__item {
+        float: left;
+		width: 33.33333333%;
+		padding: 15px;
+    }
+}

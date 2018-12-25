@@ -1,20 +1,8 @@
 .b-content {
 	padding: 30px 20px 50px;
 
-	&:after {
-		content: '';
-		display: block;
-		clear: both;
-	}
-
 	.content__section {
 		margin-bottom: 30px;
-	}
-
-	.content__card {
-		float: left;
-		width: 33.33333333%;
-		padding: 15px;
 	}
 
 	.content__subheader {

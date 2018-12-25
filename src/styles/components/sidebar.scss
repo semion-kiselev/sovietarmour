@@ -1,7 +1,6 @@
 $sidebarHeaderHeight: 69px;
 
 .b-sidebar {
-	display: none;
 	position: fixed;
 	top: 0;
 	bottom: 0;
@@ -10,7 +9,14 @@ $sidebarHeaderHeight: 69px;
 	background-color: #fff;
 	box-shadow: #000 0 0 10px;
 	z-index: 6;
-	outline: none;
+    outline: none;
+    transform: translate(300px, 0);
+    transition: transform .4s ease;
+    z-index: 20;
+
+    &.__is-visible {
+        transform: translate(0, 0);
+    }
 
 	.sidebar__close {
 		position: absolute;
@@ -42,9 +48,5 @@ $sidebarHeaderHeight: 69px;
 	.sidebar__content {
 		height: calc(100% - #{$sidebarHeaderHeight});
 		overflow: auto;
-	}
-
-	@media screen and (max-width: 576px) {
-		width: 100%;
 	}
 }

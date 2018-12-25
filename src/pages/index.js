@@ -1,7 +1,7 @@
 import React from 'react';
 import {graphql} from 'gatsby';
 import Layout from '../components/layout';
-import Card from '../components/card';
+import Cards from '../components/cards';
 import {pageNames} from '../constants';
 import trans from '../lang';
 
@@ -17,19 +17,10 @@ export default (props) => (
         pageName={pageNames.HOME}
     >
         <div className="b-content">
-            {
-                props.data.items.edges.map(({node: item}) => (
-                    <div
-                        key={item.article}
-                        className="content__card"
-                    >
-                        <Card
-                            item={item}
-                            locale={locale}
-                        />
-                    </div>
-                ))
-            }
+            <Cards
+                cards={props.data.items.edges}
+                locale={locale}
+            />
 	    </div>
     </Layout>
 );

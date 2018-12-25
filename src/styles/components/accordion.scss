@@ -8,11 +8,12 @@
 			&:first-child {
 				border-top: none;
 			}
-			
+
 			.accordion__list {
-				display: none;
+                overflow: hidden;
+                transition: height .4s ease;
 			}
-			
+
 			&.__is-active,
 			&:hover {
 				& > .accordion__link {
@@ -22,9 +23,12 @@
 						color: $hover;
 					}
 				}
-			}			
+			}
 
 			&.__is-active {
+                & > .accordion__list {
+                    height: auto;
+                }
 
 				& + .accordion__item > .accordion__link .accordion__button:before {
 					opacity: 1;
