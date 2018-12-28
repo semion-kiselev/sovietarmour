@@ -76,9 +76,9 @@ class OrderedItemsProvider extends Component {
     }
 
     removeAllItemQtyFromOrder(itemToRemove) {
-        return this.setState(({orderedItems}) => (
-            {orderedItems: orderedItems.filter(item => (item.article !== itemToRemove.article))
-        }));
+        const orderedItems = this.state.orderedItems.filter(item => (item.article !== itemToRemove.article));
+        this.setState({orderedItems});
+        this.saveOrderedItemsToLocalStorage(orderedItems);
     }
 
     removeAllItemsFromOrder() {

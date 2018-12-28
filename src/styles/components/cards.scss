@@ -11,3 +11,19 @@
 		padding: 15px;
     }
 }
+
+@media screen and (max-width: $tablet-large-breakpoint) {
+	.b-cards {
+		.cards__item {
+			width: 50%;
+		}
+	}
+}
+
+@media screen and (max-width: $phone-breakpoint) {
+	.b-cards {
+		.cards__item {
+			width: 100%;
+		}
+	}
+}
