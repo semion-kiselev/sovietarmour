@@ -1,4 +1,11 @@
+// double is gatsby-node
 export const locales = ['en', 'ru'];
+
+// double is gatsby-node
+export const itemsArticlesToDisplayInNews = [
+    'SA87002',
+    'SA87001'
+];
 
 export const IMAGE_URL = 'https://res.cloudinary.com/dgkwcs24b/image/upload/v1533321759/sa/';
 export const IMAGE_BIG = 'big';
@@ -11,11 +18,6 @@ export const pageNames = {
     CATALOG: 'CATALOG',
     SEARCH: 'SEARCH'
 }
-
-export const itemsArticlesToDisplayInNews = [
-    'SA87001',
-    'SA87002'
-];
 
 export const ACCORDION_ITEM_HEIGHT = 51;
 

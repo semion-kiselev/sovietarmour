@@ -30,7 +30,8 @@
 		text-transform: uppercase;
 		font-size: 40px;
 		text-align: center;
-		transition: border-color 0.2s ease;
+        transition: border-color 0.2s ease;
+        cursor: pointer;
 
 		&:first-child {
 			margin-left: 0;

@@ -87,15 +87,15 @@ class OrderedItemsProvider extends Component {
     }
 
     getOrderedItemsFromLocalStorage() {
-        return localStorage.getItem(LS_ORDER_ITEMS_KEY);
+        return typeof window !== 'undefined' && window.localStorage.getItem(LS_ORDER_ITEMS_KEY);
     }
 
     saveOrderedItemsToLocalStorage(items) {
-        localStorage.setItem(LS_ORDER_ITEMS_KEY, JSON.stringify(items));
+        return typeof window !== 'undefined' && window.localStorage.setItem(LS_ORDER_ITEMS_KEY, JSON.stringify(items));
     }
 
     removeOrderedItemsFromLocalStorage() {
-        return localStorage.removeItem(LS_ORDER_ITEMS_KEY);
+        return typeof window !== 'undefined' && window.localStorage.removeItem(LS_ORDER_ITEMS_KEY);
     }
 
     render() {
