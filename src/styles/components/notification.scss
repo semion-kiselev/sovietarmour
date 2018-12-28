@@ -1,11 +1,16 @@
 .b-notification {
-    display: none;
     position: fixed;
     right: 20px;
     bottom: 20px;
     width: 300px;
     padding: 12px 8px;
     color: $overlay-text-color;
+    transform: translate(320px, 0);
+    transition: transform .4s ease;
+
+    &.__is-visible {
+        transform: translate(0, 0);
+    }
 
     &.__success {
         border-left: 8px solid #074900;

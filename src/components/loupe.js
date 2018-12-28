@@ -7,29 +7,25 @@ class Loupe extends Component {
         super(props);
 
         this.state = {
-            imageIsLoaded: false,
-            scaleImage: false
+            imageIsLoaded: false
         }
 
         this.handleImageLoad = this.handleImageLoad.bind(this);
     }
 
     handleImageLoad() {
-        this.setState({
-            imageIsLoaded: true,
-            scaleImage: true
-        })
+        this.setState({imageIsLoaded: true});
     }
 
     render() {
         const {image, onRequestClose} = this.props;
-        const {imageIsLoaded, scaleImage} = this.state;
+        const {imageIsLoaded} = this.state;
 
         return (
             <div className="b-loupe" tabIndex="1">
                 {!imageIsLoaded && <div className="loupe__loader" />}
                 <img
-                    className={cn('loupe__image', {'__full-size': scaleImage})}
+                    className={cn('loupe__image', {'__full-size': imageIsLoaded})}
                     src={image}
                     alt=""
                     onLoad={this.handleImageLoad}

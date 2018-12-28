@@ -49,3 +49,51 @@ export const setCookie = (name, value, options) => {
 
     document.cookie = updatedCookie;
 }
+
+export const getOrderedItemsQty = (orderedItems) =>
+    orderedItems.reduce((acc, item) => {
+        return acc += item.qty;
+    }, 0);
+
+export const omit = (fieldToOmit, obj) => {
+    const updatedObj = {};
+    const fields = Object.keys(obj);
+
+    if (!fields.length) {
+        return obj;
+    }
+
+    const filteredFields = fields.filter(field => field !== fieldToOmit);
+
+    filteredFields.forEach(field => updatedObj[field] = obj[field]);
+
+    return updatedObj;
+}
+
+const encode = (data) => Object.keys(data)
+    .map(key => encodeURIComponent(key) + "=" + encodeURIComponent(data[key]))
+    .join("&");
+
+export const request = (method, url, headers, body, onSuccess, onError) => {
+    const xhr = new XMLHttpRequest();
+
+    xhr.onload = xhr.onerror = () => {
+        if (xhr.status === 200) {
+            onSuccess(xhr.responseText);
+        } else {
+            onError(xhr.status);
+        }
+    };
+
+    xhr.open(method, url, true);
+
+    if (headers) {
+        const headersKeys = Object.keys(headers);
+        if (headersKeys.length) {
+            headersKeys.forEach(key => xhr.setRequestHeader(key, headers[key]));
+        }
+    }
+
+    const dataToSend = body ? encode(body) : null;
+    xhr.send(dataToSend);
+};

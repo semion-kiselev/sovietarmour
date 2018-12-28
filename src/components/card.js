@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 import {IMAGE_URL, IMAGE_SMALL} from '../constants';
 import trans from '../lang';
 
-const Card = ({item, locale, onLoupe}) => (
+const Card = ({item, locale, onLoupe, onOrder}) => (
     <div
         className="b-card"
         onClick={onLoupe}
@@ -22,7 +22,13 @@ const Card = ({item, locale, onLoupe}) => (
                         <div className="card__price">
                             {`${item.price}$`}
                         </div>
-                        <div className="card__order">
+                        <div
+                            className="card__order"
+                            onClick={(e) => {
+                                e.stopPropagation();
+                                onOrder();
+                            }}
+                        >
                             {trans.SHOPPING_ORDER[locale]}
                         </div>
                     </>
@@ -35,7 +41,8 @@ const Card = ({item, locale, onLoupe}) => (
 Card.propTypes = {
     locale: PropTypes.string,
     item: PropTypes.object,
-    onLoupe: PropTypes.func
+    onLoupe: PropTypes.func,
+    onOrder: PropTypes.func
 }
 
 export default Card;

@@ -5,13 +5,21 @@ import SearchIcon from './icons/search';
 import SidebarIcon from './icons/sidebar';
 import MenuIcon from './icons/menu';
 import LocaleIcon from './icons/locale';
+import ShoppingIcon from './icons/shopping';
 import withSidebar from './hocs/with-sidebar';
 import withMenu from './hocs/with-menu';
 import withLocales from './hocs/with-locales';
+import withShoppingCard from './hocs/with-shopping-card';
+import {withOrderedItemsConsumer} from '../contexts/ordered-items';
+import {getOrderedItemsQty} from '../utils';
 
 class Utils extends PureComponent {
     render() {
-        const {showSidebar, showMenu, showLocales, sidebarIsVisible, menuIsVisible, localesAreVisible} = this.props;
+        const {
+            showSidebar, showMenu, showLocales, showShoppingCard, orderedItems,
+            sidebarIsVisible, menuIsVisible, localesAreVisible, shoppingCardIsVisible
+        } = this.props;
+        const orderedItemsQty = getOrderedItemsQty(orderedItems);
 
         return (
             <>
@@ -32,8 +40,18 @@ class Utils extends PureComponent {
                                 <SearchIcon />
                             </i>
                         </li>
-                        <li className="utils__item __shopping">
-                            {/* shopping-card */}
+                        <li className={cn('utils__item', '__shopping', {'__is-active': shoppingCardIsVisible})}>
+                            <i className="b-shopping-card icon" onClick={showShoppingCard}>
+                                <ShoppingIcon />
+                                <span
+                                    className="shopping-card__items-circle"
+                                    style={{display: orderedItemsQty ? 'block' : 'none'}}
+                                >
+                                    <span className="shopping-card__items-num">
+                                        {orderedItemsQty}
+                                    </span>
+                                </span>
+                            </i>
                         </li>
                         <li className={cn('utils__item', '__sidebar', {'__is-active': sidebarIsVisible})}>
                             <i className="icon" onClick={showSidebar}>
@@ -55,7 +73,11 @@ Utils.propTypes = {
     showMenu: PropTypes.func.isRequired,
     menuIsVisible: PropTypes.bool.isRequired,
     showLocales: PropTypes.func.isRequired,
-    localesAreVisible: PropTypes.bool.isRequired
+    localesAreVisible: PropTypes.bool.isRequired,
+    showShoppingCard: PropTypes.func.isRequired,
+    shoppingCardIsVisible: PropTypes.bool.isRequired,
+    orderedItems: PropTypes.arrayOf(PropTypes.object).isRequired,
+    orderedItemsActions: PropTypes.object.isRequired
 }
 
-export default withLocales(withMenu(withSidebar(Utils)));
+export default withOrderedItemsConsumer(withShoppingCard(withLocales(withMenu(withSidebar(Utils)))));

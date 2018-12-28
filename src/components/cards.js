@@ -4,6 +4,7 @@ import Card from './card';
 import Overlay from './overlay';
 import Loupe from './loupe';
 import {IMAGE_URL, IMAGE_BIG} from '../constants';
+import {withOrderedItemsConsumer} from '../contexts/ordered-items';
 
 class Cards extends PureComponent {
     constructor(props) {
@@ -14,11 +15,16 @@ class Cards extends PureComponent {
         };
 
         this.handleLoupe = this.handleLoupe.bind(this);
+        this.handleItemOrder = this.handleItemOrder.bind(this);
         this.clearViewedImage = this.clearViewedImage.bind(this);
     }
 
     handleLoupe(image) {
         return () => this.setState({viewedImage: image});
+    }
+
+    handleItemOrder(item) {
+        return () => this.props.orderedItemsActions.addItemToOrder(item);
     }
 
     clearViewedImage() {
@@ -42,6 +48,7 @@ class Cards extends PureComponent {
                                     item={item}
                                     locale={locale}
                                     onLoupe={this.handleLoupe(`${IMAGE_URL}/${IMAGE_BIG}/${item.image}`)}
+                                    onOrder={this.handleItemOrder(item)}
                                 />
                             </div>
                         ))
@@ -67,7 +74,9 @@ class Cards extends PureComponent {
 
 Cards.propTypes = {
     cards: PropTypes.arrayOf(PropTypes.object).isRequired,
-    locale: PropTypes.string.isRequired
+    locale: PropTypes.string.isRequired,
+    orderedItems: PropTypes.arrayOf(PropTypes.object).isRequired,
+    orderedItemsActions: PropTypes.object.isRequired
 };
 
-export default Cards;
+export default withOrderedItemsConsumer(Cards);

@@ -18,3 +18,8 @@ export const itemsArticlesToDisplayInNews = [
 ];
 
 export const ACCORDION_ITEM_HEIGHT = 51;
+
+export const LS_ORDER_ITEMS_KEY = 'sa_order_items';
+
+export const GENERIC_ANIMATION_TIMEOUT = 500;
+export const NOTIFICATION_DISAPPEARANCE_DELAY = 3000;
