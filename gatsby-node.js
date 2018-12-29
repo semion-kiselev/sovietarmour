@@ -19,6 +19,22 @@ exports.createPages = ({actions, graphql}) => {
                     itemsArticlesToDisplayInNews
                 }
             });
+
+            createPage({
+                path: `${locale}/about-us`,
+                component: path.resolve('./src/templates/about-us.js'),
+                context: {
+                    locale
+                }
+            });
+
+            createPage({
+                path: `${locale}/where-to-buy`,
+                component: path.resolve('./src/templates/where-to-buy.js'),
+                context: {
+                    locale
+                }
+            });
         });
 
         resolve();
