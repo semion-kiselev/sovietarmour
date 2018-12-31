@@ -44,6 +44,12 @@
 	}
 
 	@media screen and (max-width: $phone-breakpoint) {
+        .locales__items {
+            top: 100px;
+            left: 10%;
+            right: 10%;
+        }
+
 		.locales__item {
 			width: 60px;
 			height: 60px;

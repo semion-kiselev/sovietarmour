@@ -37,6 +37,64 @@ exports.createPages = ({actions, graphql}) => {
             });
         });
 
-        resolve();
+        graphql(`
+            {
+                sections: allSectionsJson {
+                    edges {
+                        node {
+                            name {
+                                en,
+                                ru
+                            },
+                            slug
+                        }
+                    }
+                }
+
+                subsections: allSubsectionsJson {
+                    edges {
+                        node {
+                            title {
+                                en,
+                                ru
+                            },
+                            description {
+                                en,
+                                ru
+                            },
+                            titleShort {
+                                en,
+                                ru
+                            },
+                            slug,
+                            section
+                        }
+                    }
+                }
+            }
+        `)
+            .catch(reject)
+            .then(({data: {sections, subsections}}) => {
+                subsections.edges.forEach(({node: subsection}) => {
+                    locales.forEach(locale => {
+                        const currentSection = sections.edges.filter(({node: section}) => (
+                            section.slug === subsection.section
+                        ))[0];
+
+                        createPage({
+                            path: `${locale}/${subsection.slug}`,
+                            component: path.resolve('./src/templates/subsection.js'),
+                            context: {
+                                locale,
+                                section: currentSection.node,
+                                subsection,
+                                subsectionSlug: subsection.slug
+                            }
+                        });
+                    });
+                });
+
+                resolve();
+            })
     });
 };

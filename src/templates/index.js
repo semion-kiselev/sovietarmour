@@ -1,3 +1,13 @@
+// todo:
+// add search
+// filter for visible sections/subsections/items
+// page freeze on overlay
+// add prop-types
+// add public files (robots + ga + sitemap + if ie < 11)
+// add _redirect
+// fill items.json
+// complete check in ie11, edge, chrome, firefox, opera
+
 import React from 'react';
 import {graphql} from 'gatsby';
 import Layout from '../components/layout';

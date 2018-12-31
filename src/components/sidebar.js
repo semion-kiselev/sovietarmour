@@ -1,6 +1,6 @@
 import React, {PureComponent} from 'react';
 import PropTypes from 'prop-types';
-import {StaticQuery, graphql} from 'gatsby';
+import {StaticQuery, graphql, Link} from 'gatsby';
 import cn from 'classnames';
 import trans from '../lang';
 import Overlay from './overlay';
@@ -13,10 +13,23 @@ class Sidebar extends PureComponent {
         super(props);
 
         this.state = {
-            activeSection: ''
+            activeSection: props.currentSectionSlug || '',
+            activeSubsection: props.currentSubsectionSlug || ''
         };
 
         this.handleSectionClick = this.handleSectionClick.bind(this);
+    }
+
+    componentDidUpdate(prevProps) {
+        const {currentSectionSlug, currentSubsectionSlug} = this.props;
+
+        if (prevProps.currentSectionSlug !== currentSectionSlug) {
+            this.setState({activeSection: currentSectionSlug});
+        }
+
+        if (prevProps.currentSubsectionSlug !== currentSubsectionSlug) {
+            this.setState({activeSubsection: currentSubsectionSlug});
+        }
     }
 
     handleSectionClick(sectionSlug) {
@@ -48,7 +61,7 @@ class Sidebar extends PureComponent {
 
     renderAccordion(sections, subsections) {
         const {locale} = this.props;
-        const {activeSection} = this.state;
+        const {activeSection, activeSubsection} = this.state;
 
         return (
             <nav className="b-accordion">
@@ -85,10 +98,12 @@ class Sidebar extends PureComponent {
                                         subsections[node.slug].map(({node}) => (
                                             <li
                                                 key={node.slug}
-                                                className="accordion__item __level-two"
+                                                className={cn('accordion__item', '__level-two', {
+                                                    '__is-active': activeSubsection === node.slug
+                                                })}
                                             >
-                                                <a
-                                                    href={`/${locale}/${node.slug}`}
+                                                <Link
+                                                    to={`/${locale}/${node.slug}`}
                                                     className="accordion__link __level-two"
                                                 >
                                                     <button className="accordion__button">
@@ -96,7 +111,7 @@ class Sidebar extends PureComponent {
                                                             {node.name[locale]}
                                                         </span>
                                                     </button>
-                                                </a>
+                                                </Link>
                                             </li>
                                         ))
                                     }
@@ -183,7 +198,9 @@ class Sidebar extends PureComponent {
 Sidebar.propTypes = {
     onRequestClose: PropTypes.func.isRequired,
     isVisible: PropTypes.bool.isRequired,
-    locale: PropTypes.string.isRequired
+    locale: PropTypes.string.isRequired,
+    currentSectionSlug: PropTypes.string,
+    currentSubsectionSlug: PropTypes.string
 };
 
 export default Sidebar;

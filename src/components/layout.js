@@ -6,7 +6,10 @@ import Footer from './footer';
 import Title from './title';
 import {OrderedItemsProvider} from '../contexts/ordered-items';
 
-const Layout = ({children, locale, title, description, pageName, pageTitle, pageSubtitle}) => (
+const Layout = ({
+    children, locale, title, description, pageName, pageTitle, pageSubtitle,
+    currentSectionSlug, currentSubsectionSlug
+}) => (
     <>
         <Helmet
             title={title[locale]}
@@ -22,6 +25,8 @@ const Layout = ({children, locale, title, description, pageName, pageTitle, page
                     <Header
                         locale={locale}
                         pageName={pageName}
+                        currentSectionSlug={currentSectionSlug}
+                        currentSubsectionSlug={currentSubsectionSlug}
                     />
                 </header>
                 <section className="page__title">

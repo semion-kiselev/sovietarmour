@@ -62,7 +62,7 @@ class Card extends PureComponent {
                 />
                 <div className="card__shopping">
                     {
-                        item.price && (
+                        item.price !== '0' && (
                             <>
                                 <div className="card__price">
                                     {`${item.price}$`}

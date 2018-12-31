@@ -31,6 +31,8 @@ export default (WrappedComponent) =>
                         {...this.props}
                     />
                     <Sidebar
+                        currentSectionSlug={this.props.currentSectionSlug}
+                        currentSubsectionSlug={this.props.currentSubsectionSlug}
                         locale={this.props.locale}
                         isVisible={this.state.sidebarIsVisible}
                         onRequestClose={this.closeSidebar}
