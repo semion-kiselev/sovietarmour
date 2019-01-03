@@ -1,9 +1,10 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import Logo from './logo';
 import Utils from './utils';
 import Nav from './nav';
 
-export default ({locale, pageName, currentSectionSlug, currentSubsectionSlug}) => (
+const Header = ({locale, pageName, currentSectionSlug, currentSubsectionSlug}) => (
     <div className="b-header">
         <div className="header__logo">
             <Logo locale={locale} />
@@ -26,3 +27,12 @@ export default ({locale, pageName, currentSectionSlug, currentSubsectionSlug}) =
         </div>
     </div>
 );
+
+Header.propTypes = {
+    locale: PropTypes.string.isRequired,
+    pageName: PropTypes.string.isRequired,
+    currentSectionSlug: PropTypes.string,
+    currentSubsectionSlug: PropTypes.string
+};
+
+export default Header;

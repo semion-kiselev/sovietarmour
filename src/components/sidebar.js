@@ -43,13 +43,8 @@ class Sidebar extends PureComponent {
         }
     }
 
-    getNormalizedSections(sections) {
-        return sections.edges.filter(section => section.node.visible);
-    }
-
     getNormalizedSubsections(subsections) {
         return subsections.edges
-            .filter(subsection => subsection.node.visible)
             .reduce((acc, subsection) => {
                 if (!acc[subsection.node.section]) {
                     acc[subsection.node.section] = [];
@@ -131,7 +126,11 @@ class Sidebar extends PureComponent {
             <StaticQuery
                 query={graphql`
                     query DataQuery {
-                        sections: allSectionsJson {
+                        sections: allSectionsJson (
+                            filter: {
+                                visible: {eq: true}
+                            }
+                        ) {
                             edges {
                                 node {
                                     name {
@@ -143,7 +142,11 @@ class Sidebar extends PureComponent {
                                 }
                             }
                         }
-                        subsections: allSubsectionsJson {
+                        subsections: allSubsectionsJson (
+                            filter: {
+                                visible: {eq: true}
+                            }
+                        ) {
                             edges {
                                 node {
                                     name {
@@ -159,7 +162,6 @@ class Sidebar extends PureComponent {
                     }
                 `}
                 render={({sections, subsections}) => {
-                    const normalizedSections = this.getNormalizedSections(sections);
                     const normalizedSubsections = this.getNormalizedSubsections(subsections);
 
                     return (
@@ -183,7 +185,7 @@ class Sidebar extends PureComponent {
                                 </div>
                                 <div className="sidebar__content">
                                     {
-                                        this.renderAccordion(normalizedSections, normalizedSubsections)
+                                        this.renderAccordion(sections.edges, normalizedSubsections)
                                     }
                                 </div>
                             </div>

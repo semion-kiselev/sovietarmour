@@ -1,6 +1,7 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 
-export default ({pageTitle, pageSubtitle}) => (
+const Title = ({pageTitle, pageSubtitle}) => (
     <div className="b-title">
         <div className="title__inner">
             <h1 className="title__main">
@@ -12,3 +13,10 @@ export default ({pageTitle, pageSubtitle}) => (
         </div>
     </div>
 );
+
+Title.propTypes = {
+    pageTitle: PropTypes.oneOfType([PropTypes.string, PropTypes.node]).isRequired,
+    pageSubtitle: PropTypes.string.isRequired
+};
+
+export default Title;

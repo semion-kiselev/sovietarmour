@@ -1,7 +1,8 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import {Link} from 'gatsby';
 
-export default ({locale}) => (
+const Logo = ({locale}) => (
     <Link to={`/${locale}`} className="b-logo">
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 47.849327 21.019293">
             <g
@@ -42,3 +43,9 @@ export default ({locale}) => (
         </svg>
     </Link>
 );
+
+Logo.propTypes = {
+    locale: PropTypes.string.isRequired
+};
+
+export default Logo;

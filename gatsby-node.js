@@ -2,8 +2,18 @@ const path = require('path');
 
 const locales = ['en', 'ru'];
 const itemsArticlesToDisplayInNews = [
+    'SA901',
+    'SA902',
+    'UMmt673',
+    'ZV5046',
+    'W1939-37',
+    'UM451',
+    'R716',
+    'UM252',
     'SA87002',
-    'SA87001'
+    'SA87001',
+    'SA197',
+    'Ar72401'
 ];
 
 exports.createPages = ({actions, graphql}) => {
@@ -47,7 +57,11 @@ exports.createPages = ({actions, graphql}) => {
 
         graphql(`
             {
-                sections: allSectionsJson {
+                sections: allSectionsJson(
+                    filter: {
+                        visible: {eq: true}
+                    }
+                ) {
                     edges {
                         node {
                             name {
@@ -59,7 +73,11 @@ exports.createPages = ({actions, graphql}) => {
                     }
                 }
 
-                subsections: allSubsectionsJson {
+                subsections: allSubsectionsJson(
+                    filter: {
+                        visible: {eq: true}
+                    }
+                ) {
                     edges {
                         node {
                             title {

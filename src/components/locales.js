@@ -38,6 +38,7 @@ class Locales extends PureComponent {
                 <Overlay
                     isVisible={isVisible}
                     onRequestClose={onRequestClose}
+                    closeOnOverlayClick
                 >
                     <div className="locales__items">
                         <Location>

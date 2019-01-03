@@ -10,6 +10,10 @@
     z-index: 10;
     transition: opacity .4s ease;
 
+    &.__with-overflow-scroll {
+        overflow: scroll;
+    }
+
     &.__light {
         background-color: rgba(0,0,0,0.5);
     }
@@ -19,7 +23,7 @@
     }
 
 	.overlay__close {
-		position: absolute;
+		position: fixed;
 		top: 25px;
 		right: 25px;
 		width: $default-icon-size;

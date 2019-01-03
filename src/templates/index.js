@@ -1,13 +1,12 @@
 // todo:
-// filter for visible sections/subsections/items
-// page freeze on overlay
-// add prop-types
 // use pure-component ?
+// add favicons
 // add public files (robots + ga + sitemap + if ie < 11)
 // add _redirect
 // complete check in ie11, edge, chrome, firefox, opera
 
 import React from 'react';
+import PropTypes from 'prop-types';
 import {graphql} from 'gatsby';
 import Layout from '../components/layout';
 import Cards from '../components/cards';
@@ -26,7 +25,7 @@ const getSortedItemsByPositionInNews = (itemEdges) => {
     return ar;
 }
 
-export default (props) => {
+const Home = (props) => {
     const {locale} = props.pageContext;
     const items = getSortedItemsByPositionInNews(props.data.items.edges);
     const normalizedItems = items.map(item => item.node);
@@ -50,11 +49,19 @@ export default (props) => {
     );
 }
 
+Home.propTypes = {
+    pageContext: PropTypes.object.isRequired,
+    data: PropTypes.object.isRequired
+};
+
+export default Home;
+
 export const IndexQuery = graphql`
     query IndexQuery($itemsArticlesToDisplayInNews: [String]) {
         items: allItemsJson (
             filter: {
-                article: {in: $itemsArticlesToDisplayInNews}
+                article: {in: $itemsArticlesToDisplayInNews},
+                visible: {eq: true}
             }
         ) {
             edges {

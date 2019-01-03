@@ -13,6 +13,7 @@ const Menu = ({locale, pageName: currentPage, isVisible, onRequestClose}) => {
             <Overlay
                 isVisible={isVisible}
                 onRequestClose={onRequestClose}
+                closeOnOverlayClick
             >
                 <div className="menu__items">
                     {

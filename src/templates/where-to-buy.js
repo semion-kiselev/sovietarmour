@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import Layout from '../components/layout';
 import {pageNames} from '../constants';
 import trans from '../lang';
@@ -52,5 +53,9 @@ const WhereToBuy = (props) => {
         </Layout>
     );
 }
+
+WhereToBuy.propTypes = {
+    pageContext: PropTypes.object.isRequired
+};
 
 export default WhereToBuy;

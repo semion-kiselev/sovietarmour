@@ -2,6 +2,7 @@ import React, {PureComponent, createRef} from 'react';
 import PropTypes from 'prop-types';
 import cn from 'classnames';
 import OutIcon from './icons/out';
+import {withRootFreezeConsumer} from '../contexts/root-freeze';
 
 class Overlay extends PureComponent {
     constructor(props) {
@@ -17,20 +18,26 @@ class Overlay extends PureComponent {
     }
 
     componentDidUpdate(prevProps) {
-        const {isVisible} = this.props;
+        const {isVisible, setScrollWhenVisible, rootFreezeActions} = this.props;
 
         if (prevProps.isVisible !== isVisible) {
             if (isVisible) {
                 this.overlay.current.style.display = 'block';
+                rootFreezeActions.freezeRoot();
+                if (setScrollWhenVisible) {
+                    rootFreezeActions.hideRootScroll();
+                }
                 requestAnimationFrame(() => this.setState({overlayIsShown: true}));
                 return;
             }
 
             const transtionEnd = () => {
                 this.overlay.current.style.display = 'none';
+                rootFreezeActions.defrostRoot();
                 this.overlay.current.removeEventListener('transitionend', transtionEnd);
             }
             this.overlay.current.addEventListener('transitionend', transtionEnd);
+            rootFreezeActions.showRootScroll();
             requestAnimationFrame(() => this.setState({overlayIsShown: false}));
         }
     }
@@ -48,13 +55,17 @@ class Overlay extends PureComponent {
     }
 
     render() {
-        const {onRequestClose, children, noExitIcon, light} = this.props;
+        const {onRequestClose, children, noExitIcon, light, rootWithHiddenScroll} = this.props;
         const {overlayIsShown} = this.state;
 
         return (
             <div
                 ref={this.overlay}
-                className={cn('b-overlay', {'__visible': overlayIsShown, '__light': light})}
+                className={cn('b-overlay', {
+                    '__visible': overlayIsShown,
+                    '__light': light,
+                    '__with-overflow-scroll': rootWithHiddenScroll
+                })}
                 onClick={this.handleOverlayClick}
             >
                 {
@@ -78,7 +89,11 @@ Overlay.propTypes = {
     noExitIcon: PropTypes.bool,
     closeOnOverlayClick: PropTypes.bool,
     light: PropTypes.bool,
-    children: PropTypes.node
+    setScrollWhenVisible: PropTypes.bool,
+    children: PropTypes.node,
+    rootIsFrozen: PropTypes.bool.isRequired,
+    rootWithHiddenScroll: PropTypes.bool.isRequired,
+    rootFreezeActions: PropTypes.object.isRequired
 };
 
-export default Overlay;
+export default withRootFreezeConsumer(Overlay);

@@ -21,7 +21,7 @@ class Card extends PureComponent {
         const imgClone = img.cloneNode();
         imgClone.style.position = 'fixed';
         imgClone.style.border = '1px solid #dedde1';
-        imgClone.style.top = (imgCoords.top - scrollSize) + 'px';
+        imgClone.style.top = imgCoords.top + 'px';
         imgClone.style.left = imgCoords.left + 'px';
         imgClone.style.width = img.offsetWidth + 'px';
         imgClone.style.height = img.offsetHeight + 'px';

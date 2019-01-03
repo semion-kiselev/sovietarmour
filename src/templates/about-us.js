@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import Layout from '../components/layout';
 import {pageNames} from '../constants';
 import trans from '../lang';
@@ -43,5 +44,9 @@ const AboutUs = (props) => {
         </Layout>
     );
 }
+
+AboutUs.propTypes = {
+    pageContext: PropTypes.object.isRequired
+};
 
 export default AboutUs;

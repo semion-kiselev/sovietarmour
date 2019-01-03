@@ -1,8 +1,11 @@
 import React, {PureComponent, createRef} from 'react';
+import PropTypes from 'prop-types';
 import debounce from 'lodash.debounce';
 import Layout from '../components/layout';
 import Cards from '../components/cards';
-import {pageNames, locales, SEARCH_INPUT_MAX_LENGTH, SEARCH_ITEMS_MAX_QTY} from '../constants';
+import {
+    pageNames, locales, SEARCH_INPUT_MAX_LENGTH, SEARCH_ITEMS_MAX_QTY, SEARCH_INPUT_DEBOUNCE_DELAY
+} from '../constants';
 import trans from '../lang';
 import {request} from '../utils';
 
@@ -28,7 +31,7 @@ class Search extends PureComponent {
 
     requestItems = debounce(
         () => request('GET', '/items.json', null, null, this.handleQuerySuccess, this.handleQueryError),
-        300
+        SEARCH_INPUT_DEBOUNCE_DELAY
     );
 
     handleQuerySuccess(itemsJsonString) {
@@ -50,8 +53,10 @@ class Search extends PureComponent {
 
         const q = query.toLowerCase();
 
-        const filteredItems = items.filter(({article, name}) => (
-            article.toLowerCase().indexOf(q) > -1 || locales.some(locale => name[locale].toLowerCase().indexOf(q) > -1)
+        const filteredItems = items.filter(({article, name, visible}) => (
+            (article.toLowerCase().indexOf(q) > -1 ||
+            locales.some(locale => name[locale].toLowerCase().indexOf(q) > -1)) &&
+            visible
         ))
 
         if (filteredItems.length === 0) {
@@ -124,5 +129,9 @@ class Search extends PureComponent {
         );
     }
 }
+
+Search.propTypes = {
+    pageContext: PropTypes.object.isRequired
+};
 
 export default Search;

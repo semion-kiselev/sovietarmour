@@ -1,9 +1,10 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import {graphql} from 'gatsby';
 import Layout from '../components/layout';
 import Cards from '../components/cards';
 
-export default (props) => {
+const Subsection = (props) => {
     const {locale, section, subsection} = props.pageContext;
     const items = props.data.items.edges;
     const normalizedItems = items.map(item => item.node);
@@ -29,11 +30,19 @@ export default (props) => {
     );
 }
 
+Subsection.propTypes = {
+    pageContext: PropTypes.object.isRequired,
+    data: PropTypes.object.isRequired
+};
+
+export default Subsection;
+
 export const SubsectionItemsQuery = graphql`
     query SubsectionItemsQuery($subsectionSlug: String!) {
         items: allItemsJson (
             filter: {
-                subsection: {eq: $subsectionSlug}
+                subsection: {eq: $subsectionSlug},
+                visible: {eq: true}
             }
         ) {
             edges {

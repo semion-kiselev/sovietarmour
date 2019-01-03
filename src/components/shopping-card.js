@@ -343,6 +343,7 @@ class ShoppingCard extends PureComponent {
                     isVisible={isVisible}
                     onRequestClose={onRequestClose}
                     closeOnOverlayClick
+                    setScrollWhenVisible={orderedItems.length > 0}
                 >
                     <div className="b-shopping-card">
                         {
