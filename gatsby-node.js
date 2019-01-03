@@ -35,6 +35,14 @@ exports.createPages = ({actions, graphql}) => {
                     locale
                 }
             });
+
+            createPage({
+                path: `${locale}/search`,
+                component: path.resolve('./src/templates/search.js'),
+                context: {
+                    locale
+                }
+            });
         });
 
         graphql(`

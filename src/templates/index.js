@@ -1,11 +1,10 @@
 // todo:
-// add search
 // filter for visible sections/subsections/items
 // page freeze on overlay
 // add prop-types
+// use pure-component ?
 // add public files (robots + ga + sitemap + if ie < 11)
 // add _redirect
-// fill items.json
 // complete check in ie11, edge, chrome, firefox, opera
 
 import React from 'react';
@@ -30,6 +29,7 @@ const getSortedItemsByPositionInNews = (itemEdges) => {
 export default (props) => {
     const {locale} = props.pageContext;
     const items = getSortedItemsByPositionInNews(props.data.items.edges);
+    const normalizedItems = items.map(item => item.node);
 
     return (
         <Layout
@@ -42,7 +42,7 @@ export default (props) => {
         >
             <div className="b-content">
                 <Cards
-                    cards={items}
+                    cards={normalizedItems}
                     locale={locale}
                 />
             </div>

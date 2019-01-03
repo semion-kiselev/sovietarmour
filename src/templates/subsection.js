@@ -6,6 +6,7 @@ import Cards from '../components/cards';
 export default (props) => {
     const {locale, section, subsection} = props.pageContext;
     const items = props.data.items.edges;
+    const normalizedItems = items.map(item => item.node);
 
     return (
         <Layout
@@ -20,7 +21,7 @@ export default (props) => {
         >
             <div className="b-content">
                 <Cards
-                    cards={items}
+                    cards={normalizedItems}
                     locale={locale}
                 />
             </div>

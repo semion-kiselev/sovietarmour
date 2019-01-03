@@ -12,6 +12,7 @@
     "gatsby-plugin-sass": "2.0.7",
     "gatsby-source-filesystem": "2.0.8",
     "gatsby-transformer-json": "2.1.6",
+    "lodash.debounce": "^4.0.8",
     "node-sass": "4.11.0",
     "postcss-pxtorem": "4.0.1",
     "react": "16.6.3",

@@ -1,6 +1,8 @@
 import React, {PureComponent} from 'react';
 import cn from 'classnames';
 import PropTypes from 'prop-types';
+import {Link} from 'gatsby';
+import {pageNames} from '../constants';
 import SearchIcon from './icons/search';
 import SidebarIcon from './icons/sidebar';
 import MenuIcon from './icons/menu';
@@ -16,7 +18,7 @@ import {getOrderedItemsQty} from '../utils';
 class Utils extends PureComponent {
     render() {
         const {
-            showSidebar, showMenu, showLocales, showShoppingCard, orderedItems,
+            showSidebar, showMenu, showLocales, showShoppingCard, orderedItems, locale, pageName,
             sidebarIsVisible, menuIsVisible, localesAreVisible, shoppingCardIsVisible
         } = this.props;
         const orderedItemsQty = getOrderedItemsQty(orderedItems);
@@ -35,10 +37,10 @@ class Utils extends PureComponent {
                                 <LocaleIcon />
                             </i>
                         </li>
-                        <li className="utils__item __search">
-                            <i className="icon">
+                        <li className={cn('utils__item', '__search', {'__is-active': pageName === pageNames.SEARCH})}>
+                            <Link to={`/${locale}/search`} className="icon">
                                 <SearchIcon />
-                            </i>
+                            </Link>
                         </li>
                         <li className={cn('utils__item', '__shopping', {'__is-active': shoppingCardIsVisible})}>
                             <i className="b-shopping-card icon" onClick={showShoppingCard}>

@@ -130,6 +130,29 @@ export default {
         ru: 'Готовые модели, выпущенные за последний период'
     },
 
+    // SEARCH
+
+    SEARCH_HEAD_TITLE: {
+        en: 'Sovietarmour search',
+        ru: 'Поиск по товарам Sovietarmour'
+    },
+    SEARCH_HEAD_DESCRIPTION: {
+        en: 'Sovietarmour diecast models search',
+        ru: 'Поиск по готовым моделям танков Sovietarmour'
+    },
+    SEARCH_PAGE_TITLE: {
+        en: 'Search...',
+        ru: 'Поиск...'
+    },
+    SEARCH_ERROR: {
+        en: 'Seems, some search error occured :( Please, try again',
+        ru: 'Похоже, произошла ошибка поиска :( Пожалуйста, попробуйте снова'
+    },
+    SEARCH_NO_RESULTS: {
+        en: 'Nothing found yet...',
+        ru: 'Пока ничего не найдено...'
+    },
+
     // ABOUT_US
 
     ABOUT_US_HEAD_TITLE: {

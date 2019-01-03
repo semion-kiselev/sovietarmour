@@ -39,7 +39,7 @@ class Cards extends PureComponent {
             <>
                 <div className="b-cards">
                     {
-                        cards.map(({node: item}) => (
+                        cards.map((item) => (
                             <div
                                 key={item.article}
                                 className="cards__item"

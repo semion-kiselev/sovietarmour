@@ -25,3 +25,6 @@ export const LS_ORDER_ITEMS_KEY = 'sa_order_items';
 
 export const GENERIC_ANIMATION_TIMEOUT = 500;
 export const NOTIFICATION_DISAPPEARANCE_DELAY = 3000;
+
+export const SEARCH_INPUT_MAX_LENGTH = 50;
+export const SEARCH_ITEMS_MAX_QTY = 50;
