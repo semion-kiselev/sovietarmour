@@ -1,9 +1,8 @@
-// todo:
 // use pure-component ?
-// add favicons
-// add public files (robots + ga + sitemap + if ie < 11)
-// add _redirect
-// complete check in ie11, edge, chrome, firefox, opera
+
+// for image loup do not freeze html
+// firefox - не работает анимация при заказе + нажатие на корзину + не плавная анимация оверлэя
+// ie-11 - дыры в картах, смещения иконок в аккордионе
 
 import React from 'react';
 import PropTypes from 'prop-types';

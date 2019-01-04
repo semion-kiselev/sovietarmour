@@ -16,6 +16,7 @@ const autoPrefixerOptions = {browsers: ['last 2 versions', 'ie >= 11']};
 
 module.exports = {
     siteMetadata: {
+        siteUrl: 'https://sovietarmour.com`',
         title: '',
     },
     plugins: [
@@ -36,6 +37,7 @@ module.exports = {
                 path: `${__dirname}/static`
             },
         },
-        'gatsby-transformer-json'
+        'gatsby-transformer-json',
+        'gatsby-plugin-sitemap'
     ]
 }

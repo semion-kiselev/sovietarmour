@@ -1,0 +1,5 @@
+/ /ru 302 Language=ru
+/ /en 302 Language=en
+/ /en 302
+/ru/subsection/* /ru/:splat 301
+/en/subsection/* /en/:splat 301
