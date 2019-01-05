@@ -67,7 +67,7 @@ class ShoppingCard extends PureComponent {
             return;
         }
 
-        const {orderedItems} = this.props;
+        const {locale, orderedItems} = this.props;
         const {buyerName, buyerEmail, shippingAddress} = this.state;
         const normalizedItems = this.normalizeSubmitOrderedItems(orderedItems);
 
@@ -83,7 +83,7 @@ class ShoppingCard extends PureComponent {
 
         request(
             'POST',
-            '/',
+            `/${locale}/`,
             {'Content-Type': 'application/x-www-form-urlencoded'},
             requestBody,
             this.handleSubmitSuccess,

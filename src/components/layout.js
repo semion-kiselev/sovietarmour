@@ -84,6 +84,7 @@ class Layout extends PureComponent {
                             <Footer />
                         </footer>
                         <form name={SHOPPING_FORM_NAME} netlify netlify-honeypot="bot-field" style={{display: 'none'}}>
+                            <input type="hidden" name="form-name" value={SHOPPING_FORM_NAME} />
                             <input type="text" name="buyerName" />
                             <input type="text" name="buyerEmail" />
                             <input type="text" name="shippingAddress" />
