@@ -116,6 +116,7 @@ class ShoppingCard extends PureComponent {
     handleSubmitError() {
         this.setState({
             pendingSendingOrder: false,
+            notificationIsVisible: true,
             submitFailed: true
         });
         this.hideNotificationWithTimeout();
