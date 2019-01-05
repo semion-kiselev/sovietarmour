@@ -83,7 +83,7 @@ class ShoppingCard extends PureComponent {
 
         request(
             'POST',
-            `/${locale}/`,
+            `/${locale}/index.html`,
             {'Content-Type': 'application/x-www-form-urlencoded'},
             requestBody,
             this.handleSubmitSuccess,
