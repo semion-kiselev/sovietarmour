@@ -1,5 +1,3 @@
-// ie-11 - смещения иконок в аккордионе
-
 import React, {PureComponent} from 'react';
 import PropTypes from 'prop-types';
 import {graphql} from 'gatsby';
