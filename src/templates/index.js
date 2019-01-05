@@ -25,30 +25,30 @@ class Home extends PureComponent {
         const normalizedItems = items.map(item => item.node);
 
         return (
-            <>
-                <form name={SHOPPING_FORM_NAME} method="post" data-netlify="true" data-netlify-honeypot="bot-field" style={{display: 'none'}}>
-                    <input type="hidden" name="form-name" value={SHOPPING_FORM_NAME} />
-                    <input type="text" name="buyerName" />
-                    <input type="text" name="buyerEmail" />
-                    <input type="text" name="shippingAddress" />
-                    <input type="text" name="items" />
-                </form>
-                <Layout
-                    locale={locale}
-                    title={trans.HOME_HEAD_TITLE[locale]}
-                    description={trans.HOME_HEAD_DESCRIPTION[locale]}
-                    pageTitle={trans.HOME_PAGE_TITLE[locale]}
-                    pageSubtitle={trans.HOME_PAGE_SUBTITLE[locale]}
-                    pageName={pageNames.HOME}
-                >
+            <Layout
+                locale={locale}
+                title={trans.HOME_HEAD_TITLE[locale]}
+                description={trans.HOME_HEAD_DESCRIPTION[locale]}
+                pageTitle={trans.HOME_PAGE_TITLE[locale]}
+                pageSubtitle={trans.HOME_PAGE_SUBTITLE[locale]}
+                pageName={pageNames.HOME}
+            >
+                <>
                     <div className="b-content">
                         <Cards
                             cards={normalizedItems}
                             locale={locale}
                         />
                     </div>
-                </Layout>
-            </>
+                    <form name={SHOPPING_FORM_NAME} method="post" data-netlify="true" data-netlify-honeypot="bot-field" style={{display: 'none'}}>
+                        <input type="hidden" name="form-name" value={SHOPPING_FORM_NAME} />
+                        <input type="text" name="buyerName" />
+                        <input type="text" name="buyerEmail" />
+                        <input type="text" name="shippingAddress" />
+                        <input type="text" name="items" />
+                    </form>
+                </>
+            </Layout>
         );
     }
 }
