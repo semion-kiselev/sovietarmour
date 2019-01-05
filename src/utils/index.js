@@ -3,17 +3,17 @@ import {pageNames} from '../constants';
 
 export const getNavData = (locale) => ([
     {
-        path: `/${locale}`,
+        path: `/${locale}/`,
         label: trans.NAV_HOME[locale],
         pageName: pageNames.HOME
     },
     {
-        path: `/${locale}/where-to-buy`,
+        path: `/${locale}/where-to-buy/`,
         label: trans.NAV_WHERE_TO_BUY[locale],
         pageName: pageNames.WHERE_TO_BUY
     },
     {
-        path: `/${locale}/about-us`,
+        path: `/${locale}/about-us/`,
         label: trans.NAV_ABOUT_US[locale],
         pageName: pageNames.ABOUT_US
     }

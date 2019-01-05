@@ -98,7 +98,7 @@ class Sidebar extends PureComponent {
                                                 })}
                                             >
                                                 <Link
-                                                    to={`/${locale}/${node.slug}`}
+                                                    to={`/${locale}/${node.slug}/`}
                                                     className="accordion__link __level-two"
                                                 >
                                                     <button className="accordion__button">

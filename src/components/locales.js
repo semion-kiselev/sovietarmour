@@ -1,6 +1,7 @@
 import React, {PureComponent} from 'react';
 import PropTypes from 'prop-types';
-import {navigate, Location} from '@reach/router';
+import {navigate} from 'gatsby';
+import {Location} from '@reach/router';
 import cn from 'classnames';
 import Overlay from './overlay';
 

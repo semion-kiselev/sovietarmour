@@ -38,7 +38,7 @@ class Utils extends PureComponent {
                             </i>
                         </li>
                         <li className={cn('utils__item', '__search', {'__is-active': pageName === pageNames.SEARCH})}>
-                            <Link to={`/${locale}/search`} className="icon">
+                            <Link to={`/${locale}/search/`} className="icon">
                                 <SearchIcon />
                             </Link>
                         </li>

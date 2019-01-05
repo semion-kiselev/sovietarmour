@@ -7,7 +7,7 @@ class Logo extends PureComponent {
         const {locale} = this.props;
 
         return (
-            <Link to={`/${locale}`} className="b-logo">
+            <Link to={`/${locale}/`} className="b-logo">
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 47.849327 21.019293">
                     <g
                         id="layer1"
