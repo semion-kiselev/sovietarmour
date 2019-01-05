@@ -1,8 +1,8 @@
-import React, {Component} from 'react';
+import React, {PureComponent} from 'react';
 import ShoppingCard from '../shopping-card';
 
 export default (WrappedComponent) =>
-    class WithShoppingCard extends Component {
+    class WithShoppingCard extends PureComponent {
         constructor(props) {
             super(props);
 

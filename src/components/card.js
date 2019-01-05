@@ -1,9 +1,9 @@
-import React, {PureComponent, createRef} from 'react';
+import React, {Component, createRef} from 'react';
 import PropTypes from 'prop-types';
 import {IMAGE_URL, IMAGE_SMALL} from '../constants';
 import trans from '../lang';
 
-class Card extends PureComponent {
+class Card extends Component {
     constructor(props) {
         super(props);
 
@@ -35,13 +35,14 @@ class Card extends PureComponent {
         }
         imgClone.addEventListener('transitionend', transtionEnd);
 
-        requestAnimationFrame(() => {
+
+        setTimeout(() => {
             imgClone.style.top = (shoppingCardCoords.top - scrollSize) + 'px';
             imgClone.style.left = shoppingCardCoords.left + 'px';
             imgClone.style.width = '20px';
             imgClone.style.height = '20px';
             imgClone.style.opacity = 0;
-        });
+        }, 20);
     }
 
     render() {

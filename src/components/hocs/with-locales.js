@@ -1,8 +1,8 @@
-import React, {Component} from 'react';
+import React, {PureComponent} from 'react';
 import Locales from '../locales';
 
 export default (WrappedComponent) =>
-    class WithLocales extends Component {
+    class WithLocales extends PureComponent {
         constructor(props) {
             super(props);
 

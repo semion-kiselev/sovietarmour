@@ -30,9 +30,12 @@
         position: absolute;
         top: 100px;
         left: 50%;
-        margin-left: -300px;
         width: 600px;
-        margin-bottom: 100px;
+        margin-left: -300px;
+        padding-bottom: 100px;
+    }
+
+    .shopping-card__modal-inner {
         border-radius: 6px;
         background: #fff;
         color: #222;

@@ -64,7 +64,7 @@ class Search extends PureComponent {
             return;
         }
 
-        this.setState({items: filteredItems.slice(0, SEARCH_ITEMS_MAX_QTY + 1)});
+        this.setState({items: filteredItems.slice(0, SEARCH_ITEMS_MAX_QTY)});
     }
 
     handleQueryError() {

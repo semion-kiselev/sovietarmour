@@ -1,8 +1,8 @@
-import React, {Component} from 'react';
+import React, {PureComponent} from 'react';
 import Menu from '../menu';
 
 export default (WrappedComponent) =>
-    class WithMenu extends Component {
+    class WithMenu extends PureComponent {
         constructor(props) {
             super(props);
 

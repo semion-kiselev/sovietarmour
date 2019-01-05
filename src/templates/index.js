@@ -1,10 +1,6 @@
-// use pure-component ?
+// ie-11 - смещения иконок в аккордионе
 
-// for image loup do not freeze html
-// firefox - не работает анимация при заказе + нажатие на корзину + не плавная анимация оверлэя
-// ie-11 - дыры в картах, смещения иконок в аккордионе
-
-import React from 'react';
+import React, {PureComponent} from 'react';
 import PropTypes from 'prop-types';
 import {graphql} from 'gatsby';
 import Layout from '../components/layout';
@@ -24,28 +20,30 @@ const getSortedItemsByPositionInNews = (itemEdges) => {
     return ar;
 }
 
-const Home = (props) => {
-    const {locale} = props.pageContext;
-    const items = getSortedItemsByPositionInNews(props.data.items.edges);
-    const normalizedItems = items.map(item => item.node);
+class Home extends PureComponent {
+    render() {
+        const {locale} = this.props.pageContext;
+        const items = getSortedItemsByPositionInNews(this.props.data.items.edges);
+        const normalizedItems = items.map(item => item.node);
 
-    return (
-        <Layout
-            locale={locale}
-            title={trans.HOME_HEAD_TITLE[locale]}
-            description={trans.HOME_HEAD_DESCRIPTION[locale]}
-            pageTitle={trans.HOME_PAGE_TITLE[locale]}
-            pageSubtitle={trans.HOME_PAGE_SUBTITLE[locale]}
-            pageName={pageNames.HOME}
-        >
-            <div className="b-content">
-                <Cards
-                    cards={normalizedItems}
-                    locale={locale}
-                />
-            </div>
-        </Layout>
-    );
+        return (
+            <Layout
+                locale={locale}
+                title={trans.HOME_HEAD_TITLE[locale]}
+                description={trans.HOME_HEAD_DESCRIPTION[locale]}
+                pageTitle={trans.HOME_PAGE_TITLE[locale]}
+                pageSubtitle={trans.HOME_PAGE_SUBTITLE[locale]}
+                pageName={pageNames.HOME}
+            >
+                <div className="b-content">
+                    <Cards
+                        cards={normalizedItems}
+                        locale={locale}
+                    />
+                </div>
+            </Layout>
+        );
+    }
 }
 
 Home.propTypes = {

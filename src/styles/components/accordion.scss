@@ -30,14 +30,6 @@
                     height: auto;
                 }
 
-				& + .accordion__item > .accordion__link .accordion__button:before {
-					opacity: 1;
-				}
-
-				& > .accordion__link .accordion__button:after {
-					opacity: 1;
-				}
-
 				.accordion__icon {
 					transform: rotate(90deg);
 				}
@@ -86,28 +78,7 @@
 		font-weight: inherit;
 		padding: 0 40px 0 20px;
 		outline: none;
-		cursor: pointer;
-
-		&:after,
-		&:before {
-			content: '';
-			display: block;
-			position: absolute;
-			top: 0;
-			left: 0;
-			width: 100%;
-			height: 100%;
-			opacity: 0;
-			transition: opacity .2s ease-in;
-		}
-
-		&:after {
-			box-shadow: 0 2px 5px -1px rgba(0,0,0,.5);
-		}
-
-		&:before {
-			box-shadow: 0 -2px 5px -1px rgba(0,0,0,.5);
-		}
+        cursor: pointer;
 	}
 
 	.accordion__button-text {
@@ -121,7 +92,8 @@
 		position: absolute;
 		top: 50%;
 		right: 18px;
-		width: 6px;
+        width: 6px;
+        height: 10px;
 		margin-top: -6px;
 		transition: transform .4s ease, color .2s ease;
 	}

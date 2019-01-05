@@ -1,8 +1,8 @@
-import React, {Component} from 'react';
+import React, {PureComponent} from 'react';
 import Sidebar from '../sidebar';
 
 export default (WrappedComponent) =>
-    class WithSidebar extends Component {
+    class WithSidebar extends PureComponent {
         constructor(props) {
             super(props);
 

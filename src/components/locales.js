@@ -39,6 +39,7 @@ class Locales extends PureComponent {
                     isVisible={isVisible}
                     onRequestClose={onRequestClose}
                     closeOnOverlayClick
+                    enableRootFreeze
                 >
                     <div className="locales__items">
                         <Location>

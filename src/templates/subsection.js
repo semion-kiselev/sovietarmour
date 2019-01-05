@@ -1,33 +1,35 @@
-import React from 'react';
+import React, {PureComponent} from 'react';
 import PropTypes from 'prop-types';
 import {graphql} from 'gatsby';
 import Layout from '../components/layout';
 import Cards from '../components/cards';
 
-const Subsection = (props) => {
-    const {locale, section, subsection} = props.pageContext;
-    const items = props.data.items.edges;
-    const normalizedItems = items.map(item => item.node);
+class Subsection extends PureComponent {
+    render() {
+        const {locale, section, subsection} = this.props.pageContext;
+        const items = this.props.data.items.edges;
+        const normalizedItems = items.map(item => item.node);
 
-    return (
-        <Layout
-            locale={locale}
-            title={subsection.title[locale]}
-            description={subsection.description[locale]}
-            pageTitle={section.name[locale]}
-            pageSubtitle={subsection.titleShort[locale]}
-            pageName=""
-            currentSectionSlug={section.slug}
-            currentSubsectionSlug={subsection.slug}
-        >
-            <div className="b-content">
-                <Cards
-                    cards={normalizedItems}
-                    locale={locale}
-                />
-            </div>
-        </Layout>
-    );
+        return (
+            <Layout
+                locale={locale}
+                title={subsection.title[locale]}
+                description={subsection.description[locale]}
+                pageTitle={section.name[locale]}
+                pageSubtitle={subsection.titleShort[locale]}
+                pageName=""
+                currentSectionSlug={section.slug}
+                currentSubsectionSlug={subsection.slug}
+            >
+                <div className="b-content">
+                    <Cards
+                        cards={normalizedItems}
+                        locale={locale}
+                    />
+                </div>
+            </Layout>
+        );
+    }
 }
 
 Subsection.propTypes = {

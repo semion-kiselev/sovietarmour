@@ -18,16 +18,18 @@ class Overlay extends PureComponent {
     }
 
     componentDidUpdate(prevProps) {
-        const {isVisible, setScrollWhenVisible, rootFreezeActions} = this.props;
+        const {isVisible, enableOverlayScroll, enableRootFreeze, rootFreezeActions} = this.props;
 
         if (prevProps.isVisible !== isVisible) {
             if (isVisible) {
                 this.overlay.current.style.display = 'block';
-                rootFreezeActions.freezeRoot();
-                if (setScrollWhenVisible) {
+                if (enableRootFreeze) {
+                    rootFreezeActions.freezeRoot();
+                }
+                if (enableOverlayScroll) {
                     rootFreezeActions.hideRootScroll();
                 }
-                requestAnimationFrame(() => this.setState({overlayIsShown: true}));
+                setTimeout(() => this.setState({overlayIsShown: true}), 20);
                 return;
             }
 
@@ -89,7 +91,8 @@ Overlay.propTypes = {
     noExitIcon: PropTypes.bool,
     closeOnOverlayClick: PropTypes.bool,
     light: PropTypes.bool,
-    setScrollWhenVisible: PropTypes.bool,
+    enableOverlayScroll: PropTypes.bool,
+    enableRootFreeze: PropTypes.bool,
     children: PropTypes.node,
     rootIsFrozen: PropTypes.bool.isRequired,
     rootWithHiddenScroll: PropTypes.bool.isRequired,

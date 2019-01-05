@@ -85,7 +85,7 @@ class Sidebar extends PureComponent {
                                     className="accordion__list"
                                     style={{
                                         height: activeSection === node.slug
-                                            ? subsections[node.slug].length * ACCORDION_ITEM_HEIGHT
+                                            ? subsections[node.slug].length * ACCORDION_ITEM_HEIGHT - 1
                                             : 0
                                     }}
                                 >
@@ -170,6 +170,7 @@ class Sidebar extends PureComponent {
                                 isVisible={isVisible}
                                 onRequestClose={onRequestClose}
                                 closeOnOverlayClick
+                                enableRootFreeze
                                 noExitIcon
                                 light
                             />

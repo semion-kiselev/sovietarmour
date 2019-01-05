@@ -184,150 +184,152 @@ class ShoppingCard extends PureComponent {
 
         return (
             <div className="shopping-card__modal">
-                <div className="shopping-card__modal-header">
-                    {trans.SHOPPING_YOUR_ORDER[locale]}
-                </div>
-
-                <div className="shopping-card__modal-body">
-                    <div className="shopping-card__items">
-                        {
-                            orderedItems.map((item) => (
-                                <div className="shopping-card__item" key={item.article}>
-                                    <div className="shopping-card__item-inner">
-                                        <div className="shopping-card__item-name-info">
-                                            <div className="shopping-card__item-name">{item.name[locale]}</div>
-                                            <div className="shopping-card__item-article">
-                                                <span className="shopping-card__item-price-mobile">{item.price}$,</span>
-                                                {item.article}
-                                            </div>
-                                        </div>
-
-                                        <div className="shopping-card__item-qty-price-info">
-                                            <div className="shopping-card__item-qty">
-                                                <span
-                                                    className="shopping-card__item-qty-down"
-                                                    onClick={this.handleItemQtyDown(item)}
-                                                >-</span>
-                                                <span className="shopping-card__item-qty-value">{item.qty}</span>
-                                                <span
-                                                    className="shopping-card__item-qty-up"
-                                                    onClick={this.handleItemQtyUp(item)}
-                                                >+</span>
-                                            </div>
-                                            <div className="shopping-card__item-price">
-                                                <span>{item.price}$</span>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div className="shopping-card__item-remove">
-                                        <div
-                                            className="shopping-card__item-remove-icon"
-                                            onClick={this.handleRemoveItem(item)}
-                                        >
-                                            &times;
-                                        </div>
-                                    </div>
-                                </div>
-                            ))
-                        }
-                        <div className="shopping-card__total">
-                            {trans.SHOPPING_TOTAL[locale]}:&nbsp;
-                            <span className="shopping-card__total-value">{this.getTotalPrice()}</span>$
-                        </div>
+                <div className="shopping-card__modal-inner">
+                    <div className="shopping-card__modal-header">
+                        {trans.SHOPPING_YOUR_ORDER[locale]}
                     </div>
 
-                    <div
-                        className="shopping-card__shipping-info"
-                        dangerouslySetInnerHTML={{__html: trans.SHOPPING_SHIPPING_PRICE_INFO[locale]}}
-                    />
+                    <div className="shopping-card__modal-body">
+                        <div className="shopping-card__items">
+                            {
+                                orderedItems.map((item) => (
+                                    <div className="shopping-card__item" key={item.article}>
+                                        <div className="shopping-card__item-inner">
+                                            <div className="shopping-card__item-name-info">
+                                                <div className="shopping-card__item-name">{item.name[locale]}</div>
+                                                <div className="shopping-card__item-article">
+                                                    <span className="shopping-card__item-price-mobile">{item.price}$,</span>
+                                                    {item.article}
+                                                </div>
+                                            </div>
 
-                    <form
-                        action="/"
-                        method="post"
-                        data-netlify="true"
-                        data-netlify-honeypot="bot-field"
-                        className="shopping-card__modal-form"
-                    >
-                        <input type="hidden" name="form-name" value={FORM_NAME} />
-                        <div className="shopping-card__modal-form-row">
-                            <label className="shopping-card__modal-form-label" htmlFor="buyerName">
-                                {trans.SHOPPING_YOUR_NAME[locale]}
-                                <span className="shopping-card__modal-form-required">*</span>
-                            </label>
-                            <input
-                                type="text"
-                                className={cn('shopping-card__modal-form-input', {'__has-error': !!formErrors.buyerName})}
-                                name="buyerName"
-                                id="buyerName"
-                                maxLength="100"
-                                value={buyerName}
-                                onChange={this.onInputChange('buyerName')}
-                            />
-                            {
-                                formErrors.buyerName &&
-                                <div className="shopping-card__modal-form-error">{formErrors.buyerName}</div>
+                                            <div className="shopping-card__item-qty-price-info">
+                                                <div className="shopping-card__item-qty">
+                                                    <span
+                                                        className="shopping-card__item-qty-down"
+                                                        onClick={this.handleItemQtyDown(item)}
+                                                    >-</span>
+                                                    <span className="shopping-card__item-qty-value">{item.qty}</span>
+                                                    <span
+                                                        className="shopping-card__item-qty-up"
+                                                        onClick={this.handleItemQtyUp(item)}
+                                                    >+</span>
+                                                </div>
+                                                <div className="shopping-card__item-price">
+                                                    <span>{item.price}$</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div className="shopping-card__item-remove">
+                                            <div
+                                                className="shopping-card__item-remove-icon"
+                                                onClick={this.handleRemoveItem(item)}
+                                            >
+                                                &times;
+                                        </div>
+                                        </div>
+                                    </div>
+                                ))
                             }
+                            <div className="shopping-card__total">
+                                {trans.SHOPPING_TOTAL[locale]}:&nbsp;
+                            <span className="shopping-card__total-value">{this.getTotalPrice()}</span>$
                         </div>
-                        <div className="shopping-card__modal-form-row">
-                            <label className="shopping-card__modal-form-label" htmlFor="buyerEmail">
-                                {trans.SHOPPING_YOUR_EMAIL[locale]}
-                                <span className="shopping-card__modal-form-required">*</span>
-                            </label>
-                            <input
-                                type="text"
-                                className={cn('shopping-card__modal-form-input', {'__has-error': !!formErrors.buyerEmail})}
-                                name="buyerEmail"
-                                id="buyerEmail"
-                                maxLength="100"
-                                value={buyerEmail}
-                                onChange={this.onInputChange('buyerEmail')}
-                            />
-                            {
-                                formErrors.buyerEmail &&
-                                <div className="shopping-card__modal-form-error">{formErrors.buyerEmail}</div>
-                            }
                         </div>
-                        <div className="shopping-card__modal-form-row">
-                            <label className="shopping-card__modal-form-label" htmlFor="shippingAddress">
-                                {trans.SHOPPING_YOUR_SHIPPING_ADDRESS[locale]}
-                                <span className="shopping-card__modal-form-required">*</span>
-                            </label>
-                            <input
-                                type="text"
-                                className={cn('shopping-card__modal-form-input', {'__has-error': !!formErrors.shippingAddress})}
-                                name="shippingAddress"
-                                id="shippingAddress"
-                                maxLength="100"
-                                value={shippingAddress}
-                                onChange={this.onInputChange('shippingAddress')}
-                            />
-                            {
-                                formErrors.shippingAddress &&
-                                <div className="shopping-card__modal-form-error">{formErrors.shippingAddress}</div>
-                            }
-                        </div>
-                        <div className="shopping-card__modal-form-row">
-                            <button
-                                className={cn('shopping-card__modal-form-btn', '__submit', '__right', {
-                                    '__pending': pendingSendingOrder
-                                })}
-                                onClick={this.handleSubmit}
-                            >
+
+                        <div
+                            className="shopping-card__shipping-info"
+                            dangerouslySetInnerHTML={{__html: trans.SHOPPING_SHIPPING_PRICE_INFO[locale]}}
+                        />
+
+                        <form
+                            action="/"
+                            method="post"
+                            data-netlify="true"
+                            data-netlify-honeypot="bot-field"
+                            className="shopping-card__modal-form"
+                        >
+                            <input type="hidden" name="form-name" value={FORM_NAME} />
+                            <div className="shopping-card__modal-form-row">
+                                <label className="shopping-card__modal-form-label" htmlFor="buyerName">
+                                    {trans.SHOPPING_YOUR_NAME[locale]}
+                                    <span className="shopping-card__modal-form-required">*</span>
+                                </label>
+                                <input
+                                    type="text"
+                                    className={cn('shopping-card__modal-form-input', {'__has-error': !!formErrors.buyerName})}
+                                    name="buyerName"
+                                    id="buyerName"
+                                    maxLength="100"
+                                    value={buyerName}
+                                    onChange={this.onInputChange('buyerName')}
+                                />
                                 {
-                                    pendingSendingOrder
-                                        ? <div className="lds-dual-ring"></div>
-                                        : trans.BUTTON_SUBMIT[locale]
+                                    formErrors.buyerName &&
+                                    <div className="shopping-card__modal-form-error">{formErrors.buyerName}</div>
                                 }
-                            </button>
-                            <button
-                                className="shopping-card__modal-form-btn __close __right"
-                                onClick={onRequestClose}
-                                type="button"
-                            >
-                                {trans.BUTTON_CLOSE[locale]}
-                            </button>
-                        </div>
-                    </form>
+                            </div>
+                            <div className="shopping-card__modal-form-row">
+                                <label className="shopping-card__modal-form-label" htmlFor="buyerEmail">
+                                    {trans.SHOPPING_YOUR_EMAIL[locale]}
+                                    <span className="shopping-card__modal-form-required">*</span>
+                                </label>
+                                <input
+                                    type="text"
+                                    className={cn('shopping-card__modal-form-input', {'__has-error': !!formErrors.buyerEmail})}
+                                    name="buyerEmail"
+                                    id="buyerEmail"
+                                    maxLength="100"
+                                    value={buyerEmail}
+                                    onChange={this.onInputChange('buyerEmail')}
+                                />
+                                {
+                                    formErrors.buyerEmail &&
+                                    <div className="shopping-card__modal-form-error">{formErrors.buyerEmail}</div>
+                                }
+                            </div>
+                            <div className="shopping-card__modal-form-row">
+                                <label className="shopping-card__modal-form-label" htmlFor="shippingAddress">
+                                    {trans.SHOPPING_YOUR_SHIPPING_ADDRESS[locale]}
+                                    <span className="shopping-card__modal-form-required">*</span>
+                                </label>
+                                <input
+                                    type="text"
+                                    className={cn('shopping-card__modal-form-input', {'__has-error': !!formErrors.shippingAddress})}
+                                    name="shippingAddress"
+                                    id="shippingAddress"
+                                    maxLength="100"
+                                    value={shippingAddress}
+                                    onChange={this.onInputChange('shippingAddress')}
+                                />
+                                {
+                                    formErrors.shippingAddress &&
+                                    <div className="shopping-card__modal-form-error">{formErrors.shippingAddress}</div>
+                                }
+                            </div>
+                            <div className="shopping-card__modal-form-row">
+                                <button
+                                    className={cn('shopping-card__modal-form-btn', '__submit', '__right', {
+                                        '__pending': pendingSendingOrder
+                                    })}
+                                    onClick={this.handleSubmit}
+                                >
+                                    {
+                                        pendingSendingOrder
+                                            ? <div className="lds-dual-ring"></div>
+                                            : trans.BUTTON_SUBMIT[locale]
+                                    }
+                                </button>
+                                <button
+                                    className="shopping-card__modal-form-btn __close __right"
+                                    onClick={onRequestClose}
+                                    type="button"
+                                >
+                                    {trans.BUTTON_CLOSE[locale]}
+                                </button>
+                            </div>
+                        </form>
+                    </div>
                 </div>
             </div>
         );
@@ -343,7 +345,8 @@ class ShoppingCard extends PureComponent {
                     isVisible={isVisible}
                     onRequestClose={onRequestClose}
                     closeOnOverlayClick
-                    setScrollWhenVisible={orderedItems.length > 0}
+                    enableOverlayScroll={orderedItems.length > 0}
+                    enableRootFreeze
                 >
                     <div className="b-shopping-card">
                         {
