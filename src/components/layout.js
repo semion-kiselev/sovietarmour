@@ -9,7 +9,6 @@ import Title from './title';
 import {OrderedItemsProvider} from '../contexts/ordered-items';
 import {RootFreezeProvider, RootFreezeConsumer} from '../contexts/root-freeze';
 import trans from '../lang';
-import {SHOPPING_FORM_NAME} from '../constants';
 
 class Layout extends PureComponent {
     render() {

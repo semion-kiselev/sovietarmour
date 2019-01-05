@@ -5,6 +5,7 @@ import Layout from '../components/layout';
 import Cards from '../components/cards';
 import {pageNames, itemsArticlesToDisplayInNews} from '../constants';
 import trans from '../lang';
+import {SHOPPING_FORM_NAME} from '../constants';
 
 const getSortedItemsByPositionInNews = (itemEdges) => {
     const ar = [];
