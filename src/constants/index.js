@@ -17,6 +17,8 @@ export const itemsArticlesToDisplayInNews = [
     'Ar72401'
 ];
 
+export const SHOPPING_FORM_NAME = 'saOrderedItems';
+
 export const NETLIFY_LOCALE_COOKIE_NAME = 'nf_lang';
 
 export const IMAGE_URL = 'https://res.cloudinary.com/dgkwcs24b/image/upload/v1533321759/sa/';

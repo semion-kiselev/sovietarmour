@@ -9,6 +9,7 @@ import Title from './title';
 import {OrderedItemsProvider} from '../contexts/ordered-items';
 import {RootFreezeProvider, RootFreezeConsumer} from '../contexts/root-freeze';
 import trans from '../lang';
+import {SHOPPING_FORM_NAME} from '../constants';
 
 class Layout extends PureComponent {
     render() {
@@ -82,6 +83,12 @@ class Layout extends PureComponent {
                         <footer className="page__footer">
                             <Footer />
                         </footer>
+                        <form name={SHOPPING_FORM_NAME} netlify netlify-honeypot="bot-field" style={{display: 'none'}}>
+                            <input type="text" name="buyerName" />
+                            <input type="text" name="buyerEmail" />
+                            <input type="text" name="shippingAddress" />
+                            <input type="text" name="items" />
+                        </form>
                     </div>
                 </OrderedItemsProvider>
             </RootFreezeProvider>

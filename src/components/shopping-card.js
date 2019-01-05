@@ -5,9 +5,7 @@ import Overlay from './overlay';
 import trans from '../lang';
 import {withOrderedItemsConsumer} from '../contexts/ordered-items';
 import {omit, request} from '../utils';
-import {GENERIC_ANIMATION_TIMEOUT, NOTIFICATION_DISAPPEARANCE_DELAY} from '../constants';
-
-const FORM_NAME = 'saOrderedItems';
+import {GENERIC_ANIMATION_TIMEOUT, NOTIFICATION_DISAPPEARANCE_DELAY, SHOPPING_FORM_NAME} from '../constants';
 
 class ShoppingCard extends PureComponent {
     constructor(props) {
@@ -74,7 +72,7 @@ class ShoppingCard extends PureComponent {
         const normalizedItems = this.normalizeSubmitOrderedItems(orderedItems);
 
         const requestBody = {
-            'form-name': FORM_NAME,
+            'form-name': SHOPPING_FORM_NAME,
             buyerName,
             buyerEmail,
             shippingAddress,
@@ -245,11 +243,12 @@ class ShoppingCard extends PureComponent {
                         <form
                             action="/"
                             method="post"
+                            name={SHOPPING_FORM_NAME}
                             data-netlify="true"
                             data-netlify-honeypot="bot-field"
                             className="shopping-card__modal-form"
                         >
-                            <input type="hidden" name="form-name" value={FORM_NAME} />
+                            <input type="hidden" name="form-name" value={SHOPPING_FORM_NAME} />
                             <div className="shopping-card__modal-form-row">
                                 <label className="shopping-card__modal-form-label" htmlFor="buyerName">
                                     {trans.SHOPPING_YOUR_NAME[locale]}
