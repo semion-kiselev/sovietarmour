@@ -241,15 +241,7 @@ class ShoppingCard extends PureComponent {
                             dangerouslySetInnerHTML={{__html: trans.SHOPPING_SHIPPING_PRICE_INFO[locale]}}
                         />
 
-                        <form
-                            action="/"
-                            method="post"
-                            name={SHOPPING_FORM_NAME}
-                            data-netlify="true"
-                            data-netlify-honeypot="bot-field"
-                            className="shopping-card__modal-form"
-                        >
-                            <input type="hidden" name="form-name" value={SHOPPING_FORM_NAME} />
+                        <form className="shopping-card__modal-form">
                             <div className="shopping-card__modal-form-row">
                                 <label className="shopping-card__modal-form-label" htmlFor="buyerName">
                                     {trans.SHOPPING_YOUR_NAME[locale]}

@@ -41,7 +41,13 @@ class Home extends PureComponent {
                             locale={locale}
                         />
                     </div>
-                    <form name={SHOPPING_FORM_NAME} method="post" data-netlify="true" data-netlify-honeypot="bot-field" style={{display: 'none'}}>
+                    <form
+                        name={SHOPPING_FORM_NAME}
+                        method="post"
+                        data-netlify="true"
+                        data-netlify-honeypot="bot-field"
+                        style={{display: 'none'}}
+                    >
                         <input type="hidden" name="form-name" value={SHOPPING_FORM_NAME} />
                         <input type="text" name="buyerName" />
                         <input type="text" name="buyerEmail" />
