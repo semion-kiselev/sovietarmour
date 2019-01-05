@@ -4,7 +4,7 @@ import {navigate, Location} from '@reach/router';
 import cn from 'classnames';
 import Overlay from './overlay';
 
-import {locales} from '../constants';
+import {locales, NETLIFY_LOCALE_COOKIE_NAME} from '../constants';
 import {setCookie} from '../utils';
 
 class Locales extends PureComponent {
@@ -21,7 +21,7 @@ class Locales extends PureComponent {
                 return;
             }
 
-            setCookie('nf_locale', locale, {path: '/',expires: 5184000});
+            setCookie(NETLIFY_LOCALE_COOKIE_NAME, locale, {path: '/',expires: 5184000});
 
             const localeReg = new RegExp(`/${currentLocale}`);
             const newLocation = pathname.replace(localeReg, `/${locale}`)
