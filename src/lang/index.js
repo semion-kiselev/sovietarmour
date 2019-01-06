@@ -149,7 +149,7 @@ export default {
         ru: 'Похоже, произошла ошибка поиска :( Пожалуйста, попробуйте снова'
     },
     SEARCH_NO_RESULTS: {
-        en: 'Nothing has found yet...',
+        en: 'Nothing has been found yet...',
         ru: 'Пока ничего не найдено...'
     },
 
