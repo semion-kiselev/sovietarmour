@@ -17,6 +17,8 @@ export const itemsArticlesToDisplayInNews = [
     'Ar72401'
 ];
 
+export const TABLET_MEDIUM_BREAKPOINT = 768;
+
 export const SHOPPING_FORM_NAME = 'saOrderedItems';
 
 export const NETLIFY_LOCALE_COOKIE_NAME = 'nf_lang';

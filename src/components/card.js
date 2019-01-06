@@ -1,7 +1,9 @@
 import React, {Component, createRef} from 'react';
 import PropTypes from 'prop-types';
-import {IMAGE_URL, IMAGE_SMALL} from '../constants';
+import {IMAGE_URL, IMAGE_SMALL, TABLET_MEDIUM_BREAKPOINT} from '../constants';
 import trans from '../lang';
+
+const SCROLL_SIZE_BREAK_POINT = 300;
 
 class Card extends Component {
     constructor(props) {
@@ -9,6 +11,7 @@ class Card extends Component {
 
         this.cardImage = createRef();
         this.animateCard = this.animateCard.bind(this);
+        this.handleCardClick = this.handleCardClick.bind(this);
     }
 
     animateCard() {
@@ -35,9 +38,12 @@ class Card extends Component {
         }
         imgClone.addEventListener('transitionend', transtionEnd);
 
+        const imgCloneTop = scrollSize > SCROLL_SIZE_BREAK_POINT
+            ? -(SCROLL_SIZE_BREAK_POINT / 2)
+            : shoppingCardCoords.top;
 
         setTimeout(() => {
-            imgClone.style.top = (shoppingCardCoords.top - scrollSize) + 'px';
+            imgClone.style.top = imgCloneTop + 'px';
             imgClone.style.left = shoppingCardCoords.left + 'px';
             imgClone.style.width = '20px';
             imgClone.style.height = '20px';
@@ -45,13 +51,19 @@ class Card extends Component {
         }, 20);
     }
 
+    handleCardClick() {
+        if (window.innerWidth >= TABLET_MEDIUM_BREAKPOINT) {
+            this.props.onLoupe();
+        }
+    }
+
     render() {
-        const {item, locale, onLoupe, onOrder} = this.props;
+        const {item, locale, onOrder} = this.props;
 
         return (
             <div
                 className="b-card"
-                onClick={onLoupe}
+                onClick={this.handleCardClick}
             >
                 <div className="card__id">{item.article}</div>
                 <div className="card__name">{item.name[locale]}</div>
