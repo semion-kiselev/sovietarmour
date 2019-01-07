@@ -3,6 +3,10 @@ export const locales = ['en', 'ru'];
 
 // double is gatsby-node
 export const itemsArticlesToDisplayInNews = [
+    'SA910',
+    'UM270',
+    'UM287',
+    'WaW001',
     'SA901',
     'SA902',
     'UMmt673',
@@ -10,11 +14,7 @@ export const itemsArticlesToDisplayInNews = [
     'W1939-37',
     'UM451',
     'R716',
-    'UM252',
-    'SA87002',
-    'SA87001',
-    'SA197',
-    'Ar72401'
+    'UM252'
 ];
 
 export const TABLET_MEDIUM_BREAKPOINT = 768;
@@ -23,7 +23,7 @@ export const SHOPPING_FORM_NAME = 'saOrderedItems';
 
 export const NETLIFY_LOCALE_COOKIE_NAME = 'nf_lang';
 
-export const IMAGE_URL = 'https://res.cloudinary.com/dgkwcs24b/image/upload/v1533321759/sa/';
+export const IMAGE_URL = 'https://res.cloudinary.com/dgkwcs24b/image/upload/sa';
 export const IMAGE_BIG = 'big';
 export const IMAGE_SMALL = 'sm';
 
