@@ -1,2 +1,2 @@
 User-agent: *
-Disallow: /admin/
+Sitemap: https://sovietarmour.com/sitemap.xml
