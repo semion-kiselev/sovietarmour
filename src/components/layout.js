@@ -23,9 +23,9 @@ class Layout extends PureComponent {
                     {
                         ({rootIsFrozen, rootWithHiddenScroll}) => (
                             <Helmet
-                                title={title[locale]}
+                                title={title}
                                 meta={[
-                                    {name: 'description', content: description[locale]}
+                                    {name: 'description', content: description}
                                 ]}
                             >
                                 <html
