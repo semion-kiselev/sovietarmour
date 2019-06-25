@@ -2,18 +2,18 @@ const path = require('path');
 
 const locales = ['en', 'ru'];
 const itemsArticlesToDisplayInNews = [
+    'SA917',
+    'SA918',
+    'SA919',
+    'SA920',
+    'S-M72011',
+    'G72069',
     'W1939-64',
     'SA915',
     'SA916',
     'PST720135',
     'Ri72004',
-    'SA914',
-    'Ta5002-02',
-    'Ta5002-03',
-    'FH3003',
-    'SA911',
-    'SA912',
-    'SA913'
+    'SA914'
 ];
 
 exports.createPages = ({actions, graphql}) => {
