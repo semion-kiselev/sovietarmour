@@ -3,18 +3,18 @@ export const locales = ['en', 'ru'];
 
 // double is gatsby-node
 export const itemsArticlesToDisplayInNews = [
+    'Gr7210',
+    'IBG72070',
+    'UM679',
+    'W1939-59',
+    'WaW005',
+    'WaW006',
+    'WaW007',
+    'ZV5057',
     'SA917',
     'SA918',
     'SA919',
-    'SA920',
-    'S-M72011',
-    'G72069',
-    'W1939-64',
-    'SA915',
-    'SA916',
-    'PST720135',
-    'Ri72004',
-    'SA914'
+    'SA920'
 ];
 
 export const TABLET_MEDIUM_BREAKPOINT = 768;
