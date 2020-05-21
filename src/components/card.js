@@ -1,6 +1,7 @@
 import React, {Component, createRef} from 'react';
 import PropTypes from 'prop-types';
-import {IMAGE_URL, IMAGE_SMALL, TABLET_MEDIUM_BREAKPOINT} from '../constants';
+import cn from 'classnames';
+import {IMAGE_URL, IMAGE_SMALL, TABLET_MEDIUM_BREAKPOINT, SHOPPING_IS_ENABLED} from '../constants';
 import trans from '../lang';
 
 const SCROLL_SIZE_BREAK_POINT = 300;
@@ -62,7 +63,7 @@ class Card extends Component {
 
         return (
             <div
-                className="b-card"
+                className={cn('b-card', {'__shopping-is-disabled': !SHOPPING_IS_ENABLED})}
                 onClick={this.handleCardClick}
             >
                 <div className="card__id">{item.article}</div>
@@ -73,27 +74,33 @@ class Card extends Component {
                     src={`${IMAGE_URL}/${IMAGE_SMALL}/${item.image}`}
                     alt={item.description[locale]}
                 />
-                <div className="card__shopping">
-                    {
-                        item.price !== '0' && (
-                            <>
-                                <div className="card__price">
-                                    {`${item.price}$`}
-                                </div>
-                                <div
-                                    className="card__order"
-                                    onClick={(e) => {
-                                        e.stopPropagation();
-                                        this.animateCard();
-                                        onOrder();
-                                    }}
-                                >
-                                    {trans.SHOPPING_ORDER[locale]}
-                                </div>
-                            </>
+                {
+                    SHOPPING_IS_ENABLED
+                        ? (
+                            <div className="card__shopping">
+                                {
+                                    item.price !== '0' && (
+                                        <>
+                                            <div className="card__price">
+                                                {`${item.price}$`}
+                                            </div>
+                                            <div
+                                                className="card__order"
+                                                onClick={(e) => {
+                                                    e.stopPropagation();
+                                                    this.animateCard();
+                                                    onOrder();
+                                                }}
+                                            >
+                                                {trans.SHOPPING_ORDER[locale]}
+                                            </div>
+                                        </>
+                                    )
+                                }
+                            </div>
                         )
-                    }
-                </div>
+                        : null
+                }
             </div>
         );
     }

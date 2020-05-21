@@ -48,7 +48,8 @@
 			display: none;
 		}
 
-		&.__shopping {
+		&.__shopping,
+		&.__shopping-is-disabled {
 			margin-right: 0;
 		}
 
@@ -78,7 +79,8 @@
 			display: block;
 		}
 
-		.utils__item.__shopping {
+		.utils__item.__shopping,
+		.utils__item.__shopping-is-disabled {
 			margin-right: 20px;
 		}
 	}

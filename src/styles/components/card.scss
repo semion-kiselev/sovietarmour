@@ -6,6 +6,10 @@
 	cursor: pointer;
 	transition: box-shadow .2s ease-in, border-bottom-color .2s ease-in;
 
+	&.__shopping-is-disabled {
+		padding-bottom: 60px;
+	}
+
 	&:hover {
 		border-bottom-color: #fff;
 		box-shadow: -1px 7px 21px -5px rgba(0,0,0,0.75);

@@ -17,6 +17,8 @@ export const itemsArticlesToDisplayInNews = [
     'IBG72070',
 ];
 
+export const SHOPPING_IS_ENABLED = false;
+
 export const TABLET_MEDIUM_BREAKPOINT = 768;
 
 export const SHOPPING_FORM_NAME = 'saOrderedItems';

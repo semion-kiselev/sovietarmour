@@ -2,7 +2,7 @@ import React, {PureComponent} from 'react';
 import cn from 'classnames';
 import PropTypes from 'prop-types';
 import {Link} from 'gatsby';
-import {pageNames} from '../constants';
+import {pageNames, SHOPPING_IS_ENABLED} from '../constants';
 import SearchIcon from './icons/search';
 import SidebarIcon from './icons/sidebar';
 import MenuIcon from './icons/menu';
@@ -37,24 +37,33 @@ class Utils extends PureComponent {
                                 <LocaleIcon />
                             </i>
                         </li>
-                        <li className={cn('utils__item', '__search', {'__is-active': pageName === pageNames.SEARCH})}>
+                        <li className={cn('utils__item', '__search', {
+                            '__is-active': pageName === pageNames.SEARCH,
+                            '__shopping-is-disabled': !SHOPPING_IS_ENABLED
+                        })}>
                             <Link to={`/${locale}/search/`} className="icon">
                                 <SearchIcon />
                             </Link>
                         </li>
-                        <li className={cn('utils__item', '__shopping', {'__is-active': shoppingCardIsVisible})}>
-                            <i className="b-shopping-card icon" onClick={showShoppingCard}>
-                                <ShoppingIcon />
-                                <span
-                                    className="shopping-card__items-circle"
-                                    style={{display: orderedItemsQty ? 'block' : 'none'}}
-                                >
+                        {
+                            SHOPPING_IS_ENABLED
+                                ? (
+                                    <li className={cn('utils__item', '__shopping', {'__is-active': shoppingCardIsVisible})}>
+                                        <i className="b-shopping-card icon" onClick={showShoppingCard}>
+                                            <ShoppingIcon />
+                                            <span
+                                                className="shopping-card__items-circle"
+                                                style={{display: orderedItemsQty ? 'block' : 'none'}}
+                                            >
                                     <span className="shopping-card__items-num">
                                         {orderedItemsQty}
                                     </span>
                                 </span>
-                            </i>
-                        </li>
+                                        </i>
+                                    </li>
+                                )
+                                : null
+                        }
                         <li className={cn('utils__item', '__sidebar', {'__is-active': sidebarIsVisible})}>
                             <i className="icon" onClick={showSidebar}>
                                 <SidebarIcon />

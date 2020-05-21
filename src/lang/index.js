@@ -202,6 +202,10 @@ export default {
         en: 'If you are not a resident of Moscow or St. Petersburg, you can order assembled models of tanks directly from our site.',
         ru: 'Если вы не являетесь резидентом Москвы или Санкт-Петербурга, то вы можете заказать готовые модели танков, оформив заказ с нашего сайта.'
     },
+    SHOPPING_IS_UNAVAILABLE: {
+        en: 'The possibility of ordering assembled models through the site is temporarily unavailable',
+        ru: 'Возможность заказа моделей через сайт временно недоступна'
+    },
     WHERE_TO_BUY_MOSCOW: {
         en: 'Moscow',
         ru: 'Москва'

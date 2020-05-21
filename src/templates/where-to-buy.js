@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import Layout from '../components/layout';
-import {pageNames} from '../constants';
+import {pageNames, SHOPPING_IS_ENABLED} from '../constants';
 import trans from '../lang';
 
 const WhereToBuy = (props) => {
@@ -20,7 +20,11 @@ const WhereToBuy = (props) => {
                 <div className="content__inner">
                     <section className="content__section">
                         <p className="content__paragraph">
-                            {trans.WHERE_TO_BUY_ORDER_RULE[locale]}
+                            {
+                                SHOPPING_IS_ENABLED
+                                    ? trans.WHERE_TO_BUY_ORDER_RULE[locale]
+                                    : trans.SHOPPING_IS_UNAVAILABLE[locale]
+                            }
                         </p>
                     </section>
 
