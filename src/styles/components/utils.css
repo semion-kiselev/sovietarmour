@@ -1,0 +1,74 @@
+.b-utils {
+  pointer-events: auto;
+}
+
+.utils__list {
+  height: 67px;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.utils__item {
+}
+
+.utils__item .icon {
+  display: block;
+  color: #fff;
+  cursor: pointer;
+  transition: color .2s ease;
+}
+
+.utils__item .icon:hover {
+  color: var(--top-nav-hover);
+}
+
+.utils__item.__menu,
+.utils__item.__sidebar {
+  display: none;
+}
+
+.utils__item.__search .icon,
+.utils__item.__sidebar .icon {
+  width: var(--default-icon-size);
+  height: var(--default-icon-size);
+}
+
+.utils__item.__menu .icon,
+.utils__item.__shopping .icon,
+.utils__item.__locale .icon {
+  width: var(--default-icon-size-inc);
+  height: var(--default-icon-size-inc);
+}
+
+.utils__item.__is-active .icon {
+  color: var(--top-nav-hover);
+}
+
+/* --tablet-medium-breakpoint: 768px; */
+@media screen and (max-width: 768px) {
+  .utils__item.__menu,
+  .utils__item.__sidebar {
+    display: block;
+  }
+}
+
+/* --phone-breakpoint: 576px; */
+@media screen and (max-width: 576px) {
+  .utils__list {
+    height: 57px;
+  }
+
+  .utils__item.__sidebar .icon,
+  .utils__item.__search .icon {
+    width: var(--phone-default-icon-size);
+    height: var(--phone-default-icon-size);
+  }
+
+  .utils__item.__menu .icon,
+  .utils__item.__shopping .icon,
+  .utils__item.__locale .icon {
+    width: var(--phone-default-icon-size-inc);
+    height: var(--phone-default-icon-size-inc);
+  }
+}

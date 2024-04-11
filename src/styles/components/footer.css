@@ -1,0 +1,21 @@
+.b-footer {
+	height: 100%;
+	background: var(--red);
+	text-align: center;
+}
+
+.b-footer:before {
+  content: '';
+  display: inline-block;
+  height: 100%;
+  width: 1px;
+  margin-left: -1px;
+  vertical-align: middle;
+}
+
+.footer__inner {
+  display: inline-block;
+  vertical-align: middle;
+  color: var(--top-nav-hover);
+  font-size: 16px;
+}

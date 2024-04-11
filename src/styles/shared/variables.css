@@ -1,0 +1,24 @@
+:root {
+  --min-width: 320px;
+  --footer-height: 66px;
+  --phone-breakpoint: 576px;
+  --tablet-medium-breakpoint: 768px;
+  --tablet-large-breakpoint: 992px;
+  --desktop-breakpoint: 1200px;
+  --wide-desktop-breakpoint: 1400px;
+  --x-wide-desktop-breakpoint: 1650px;
+  --sidebar-header-height: 69px;
+
+  --default-icon-size: 18px;
+  --default-icon-size-inc: 20px;
+  --phone-default-icon-size: 16px;
+  --phone-default-icon-size-inc: 18px;
+  --red: #6f0304;
+  --green: #074900;
+  --brown: #592700;
+  --hover: #7d0007;
+  --top-nav-hover: #ffc000;
+  --accordion-link-color: #444;
+  --overlay-text-color: #d0d0d0;
+}
+

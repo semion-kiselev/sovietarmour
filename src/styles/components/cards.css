@@ -1,0 +1,26 @@
+.b-cards:after {
+  content: '';
+  display: block;
+  clear: both;
+}
+
+.cards__item {
+  float: left;
+  width: 33.33333333%;
+  padding: 15px;
+}
+
+
+/* --tablet-large-breakpoint: 992px; */
+@media screen and (max-width: 992px) {
+  .cards__item {
+    width: 50%;
+  }
+}
+
+/* --phone-breakpoint: 576px;  */
+@media screen and (max-width: 576px) {
+  .cards__item {
+    width: 100%;
+  }
+}

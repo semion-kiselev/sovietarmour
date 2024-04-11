@@ -1,0 +1,12 @@
+.b-root {
+  overflow-y: scroll;
+}
+
+.b-root.__is-frozen {
+  position: fixed;
+  width: 100%;
+}
+
+.b-root.__scroll-is-hidden {
+  overflow: hidden;
+}

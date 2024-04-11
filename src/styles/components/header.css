@@ -1,0 +1,42 @@
+.b-header {
+	height: 68px;
+	padding: 0 30px;
+	background: rgba(111,3,4,.9);
+	box-shadow: 0 1px 3px 1px rgba(0, 0, 0, 0.5);
+}
+
+.b-header:after {
+  content: '';
+  display: block;
+  clear: both;
+}
+
+.header__logo {
+  float: left;
+}
+
+.header__nav,
+.header__utils {
+  float: right;
+  height: 100%
+}
+
+.header__utils {
+  margin-left: 30px;
+  border-left: 1px solid rgba(255,255,255,0.15);
+  padding-left: 30px;
+}
+
+
+/* --phone-breakpoint: 576px;  */
+@media screen and (max-width: 576px) {
+  .b-header {
+    height: 58px;
+    padding: 0 15px;
+  }
+
+  .header__utils {
+    margin-left: 15px;
+    padding-left: 15px;
+  }
+}

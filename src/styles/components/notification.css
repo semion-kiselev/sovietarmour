@@ -1,0 +1,25 @@
+.b-notification {
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+  width: 300px;
+  padding: 12px 8px;
+  color: var(--overlay-text-color);
+  transform: translate(320px, 0);
+  transition: transform .4s ease;
+  z-index: 20;
+}
+
+.b-notification.__is-visible {
+  transform: translate(0, 0);
+}
+
+.b-notification.__success {
+  border-left: 8px solid #074900;
+  background: #0a6800;
+}
+
+.b-notification.__error {
+  border-left: 8px solid #580004;
+  background: #7d0006;
+}

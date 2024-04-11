@@ -5,10 +5,10 @@
 	width: 137px;
 	height: 60px;
 	color: #000;
-
 }
 
-@media screen and (max-width: $phone-breakpoint) {
+/* --phone-breakpoint: 576px;  */
+@media screen and (max-width: 576px) {
 	.b-logo {
 		width: 114px;
 		height: 50px;

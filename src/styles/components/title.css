@@ -1,0 +1,71 @@
+.b-title {
+  height: 100%;
+  background: url('../../images/poster.jpg') 50% 0 no-repeat;
+  background-size: cover;
+  text-align: center;
+}
+
+.title__inner {
+  padding: 190px 30px 0;
+}
+
+.title__main,
+.title__secondary {
+  color: var(--top-nav-hover);
+  text-shadow: 0 0 3px var(--red);
+}
+
+.title__main {
+  margin-bottom: 10px;
+  font-size: 36px;
+}
+
+.title__secondary {
+  font-size: 26px;
+}
+
+/* --wide-desktop-breakpoint: 1400px; */
+@media screen and (min-width: 1400px) {
+  .title__inner {
+    padding-top: 225px;
+  }
+
+  .title__main {
+    font-size: 38px;
+  }
+
+  .title__secondary {
+    font-size: 28px;
+  }
+}
+
+/* --x-wide-desktop-breakpoint: 1650px; */
+@media screen and (min-width: 1650px) {
+  .title__inner {
+    padding-top: 245px;
+  }
+
+  .title__main {
+    font-size: 40px;
+  }
+
+  .title__secondary {
+    font-size: 30px;
+  }
+}
+
+/* --phone-breakpoint: 576px; */
+@media screen and (max-width: 576px) {
+  .title__inner {
+    padding: 160px 30px 0;
+  }
+
+  .title__main {
+    font-size: 28px;
+  }
+
+  .title__secondary {
+    font-size: 18px;
+  }
+}
+

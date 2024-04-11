@@ -1,7 +1,0 @@
-@mixin hover-color-transition {
-  transition: color .2s ease;
-}
-
-@mixin hover-color-border-transition {
-  transition: color .2s ease, border-color .3s ease;
-}

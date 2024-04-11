@@ -1,0 +1,40 @@
+.b-overlay {
+  display: none;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(20,22,24,0.95);
+  opacity: 0;
+  z-index: 10;
+  transition: opacity .4s ease;
+}
+
+.b-overlay.__with-overflow-scroll {
+  overflow: scroll;
+}
+
+.b-overlay.__light {
+  background-color: rgba(0,0,0,0.5);
+}
+
+.b-overlay.__visible {
+  opacity: 1;
+}
+
+.overlay__close {
+  position: fixed;
+  top: 25px;
+  right: 25px;
+  width: var(--default-icon-size);
+  height: var(--default-icon-size);
+  color: var(--overlay-text-color);
+  background-size: var(--default-icon-size) var(--default-icon-size);
+  cursor: pointer;
+  transition: color .2s ease;
+}
+
+.overlay__close:hover {
+  color: var(--hover);
+}

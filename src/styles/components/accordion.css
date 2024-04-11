@@ -1,0 +1,85 @@
+.accordion__item.__level-one {
+  border-top: 1px solid #ccc;
+  background: #aaa;
+}
+
+.accordion__item.__level-one:first-child {
+  border-top: none;
+}
+
+.accordion__item.__level-one .accordion__list {
+  overflow: hidden;
+  transition: height .4s ease;
+}
+
+.accordion__item.__level-one.__is-active > .accordion__link .accordion__button-text,
+.accordion__item.__level-one.__is-active > .accordion__link .accordion__icon,
+.accordion__item.__level-one:hover > .accordion__link .accordion__button-text,
+.accordion__item.__level-one:hover > .accordion__link .accordion__icon {
+  border-color: var(--hover);
+  color: var(--hover);
+}
+
+.accordion__item.__level-one.__is-active > .accordion__list {
+  height: auto;
+}
+
+
+.accordion__item.__level-one.__is-active .accordion__icon {
+  transform: rotate(90deg);
+}
+
+.accordion__item.__level-two {
+  border-top: 1px solid #eee;
+  background: #ccc;
+}
+
+.accordion__item.__level-two:first-child {
+  border-top: none;
+}
+
+.accordion__item.__level-two.__is-active > .accordion__link .accordion__button-text,
+.accordion__item.__level-two.__is-active > .accordion__link .accordion__icon {
+  border-color: var(--hover);
+  color: var(--hover);
+}
+
+.accordion__link {
+  display: block;
+  position: relative;
+}
+
+.accordion__link:hover .accordion__button-text,
+.accordion__link:hover .accordion__icon {
+  border-color: var(--hover);
+  color: var(--hover);
+}
+
+.accordion__button {
+  position: relative;
+  display: block;
+  height: 50px;
+  width: 100%;
+  font-size: 14px;
+  font-weight: inherit;
+  padding: 0 40px 0 20px;
+  outline: none;
+  cursor: pointer;
+}
+
+.accordion__button-text {
+  border-bottom: 1px solid transparent;
+  color: var(--accordion-link-color);
+  transition: color .2s ease, border-color .3s ease;
+}
+
+.accordion__icon {
+  display: block;
+  position: absolute;
+  top: 50%;
+  right: 18px;
+  width: 6px;
+  height: 10px;
+  margin-top: -6px;
+  transition: transform .4s ease, color .2s ease;
+}
