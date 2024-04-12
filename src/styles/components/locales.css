@@ -3,24 +3,18 @@
   top: 40%;
   left: 20%;
   right: 20%;
-  text-align: center;
+  display: flex;
+  justify-content: center;
 }
 
 .locales__items-inner {
-  display: inline-block;
-}
-
-.locales__items-inner:after {
-  content: '';
-  display: block;
-  clear: both;
+  display: flex;
+  gap: 20px;
 }
 
 .locales__item {
-  float: left;
   height: 100px;
   width: 100px;
-  margin-left: 20px;
   padding-top: 26px;
   border: 1px solid rgba(255,255,255,0.25);
   border-radius: 4px;
@@ -32,15 +26,10 @@
   cursor: pointer;
 }
 
-.locales__item:first-child {
-  margin-left: 0;
-}
-
 .locales__item.__is-active,
 .locales__item:hover {
   border-color: var(--hover);
 }
-
 
 /* --phone-breakpoint: 576px;  */
 @media screen and (max-width: 576px) {

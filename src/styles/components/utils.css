@@ -10,6 +10,7 @@
 }
 
 .utils__item {
+  position: relative;
 }
 
 .utils__item .icon {

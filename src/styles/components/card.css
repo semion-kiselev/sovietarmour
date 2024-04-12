@@ -39,23 +39,17 @@
 }
 
 .card__shopping {
+  display: flex;
+  justify-content: space-between;
   height: 16px;
   margin-top: 20px;
   font-size: 14px;
 }
 
-.card__shopping:after {
-  content: '';
-  display: block;
-  clear: both;
-}
-
 .card__price {
-  float: left;
 }
 
 .card__order {
-  float: right;
   color: var(--hover);
   border-bottom: 1px solid transparent;
   transition: border-color .2s ease;

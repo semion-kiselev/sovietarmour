@@ -1,17 +1,13 @@
 .menu__items {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
   max-width: 900px;
   margin: 100px auto 0;
   padding: 0 30px;
 }
 
-.menu__items:after {
-  content: '';
-  display: block;
-  clear: both;
-}
-
 .menu__item {
-  float: left;
   padding: 10px;
   width: 33.33333333%;
 }

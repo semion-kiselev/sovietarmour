@@ -1,11 +1,9 @@
-.b-cards:after {
-  content: '';
-  display: block;
-  clear: both;
+.b-cards {
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .cards__item {
-  float: left;
   width: 33.33333333%;
   padding: 15px;
 }

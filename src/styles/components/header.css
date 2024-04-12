@@ -1,23 +1,21 @@
 .b-header {
+  display: flex;
+  justify-content: space-between;
 	height: 68px;
 	padding: 0 30px;
 	background: rgba(111,3,4,.9);
 	box-shadow: 0 1px 3px 1px rgba(0, 0, 0, 0.5);
 }
 
-.b-header:after {
-  content: '';
-  display: block;
-  clear: both;
+.header__logo {
 }
 
-.header__logo {
-  float: left;
+.header__content {
+  display: flex;
 }
 
 .header__nav,
 .header__utils {
-  float: right;
   height: 100%
 }
 

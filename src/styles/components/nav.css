@@ -1,21 +1,11 @@
 .nav__list {
   position: relative;
+  display: flex;
+  gap: 20px;
   top: 2px;
 }
 
-.nav__list:after {
-  content: '';
-  display: block;
-  clear: both;
-}
-
 .nav__item {
-  float: left;
-  margin-left: 20px;
-}
-
-.nav__item:first-child {
-  margin-left: 0;
 }
 
 .nav__link {
