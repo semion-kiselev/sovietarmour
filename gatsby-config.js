@@ -32,13 +32,13 @@ module.exports = {
       },
     },
     'gatsby-transformer-json',
-    {
-      resolve: "gatsby-plugin-sitemap",
-      options: {
-        serialize: ({ path }) => ({
-          url: path,
-        }),
-      },
-    },
+    // {
+    //   resolve: "gatsby-plugin-sitemap",
+    //   options: {
+    //     serialize: ({ path }) => ({
+    //       url: path,
+    //     }),
+    //   },
+    // },
   ]
 }
